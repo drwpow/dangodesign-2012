@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--
+      ...                         ..                    ..
+   xH88"`~ .x8X                 dF                     888B.
+ :8888   .f"8888Hf        u.   '88bu.                 48888E
+:8888>  X8L  ^""`   ...ue888b  '*88888bu        .u    '8888'
+X8888  X888h        888R Y888r   ^"*8888N    ud8888.   Y88F
+88888  !88888.      888R I888>  beWE "888L :888'8888.  '88
+88888   %88888      888R I888>  888E  888E d888 '88%"   8F
+88888 '> `8888>     888R I888>  888E  888E 8888.+"      4
+`8888L %  ?888   ! u8888cJ888   888E  888F 8888L        .
+ `8888  `-*""   /   "*888*P"   .888N..888  '8888c. .+  u8N.
+   "888.      :"      'Y"       `"888*""    "88888%   "*88%
+     `""***~"`                     ""         "YP'      ""
+                                                                                      ..
+         .xHL                                                            .uef^"     888B.
+      .-`8888hxxx~       x.    .          ..         ..                :d88E       48888E
+   .H8X  `%888*"       .@88k  z88u      .@88i      .@88i         u     `888E       '8888'
+   888X     ..x..     ~"8888 ^8888     ""%888>    ""%888>     us888u.   888E .z8k   Y88F
+  '8888k .x8888888x     8888  888R       '88%       '88%   .@88 "8888"  888E~?888L  '88
+   ?8888X    "88888X    8888  888R     ..dILr~`   ..dILr~` 9888  9888   888E  888E   8F
+    ?8888X    '88888>   8888  888R    '".-%88b   '".-%88b  9888  9888   888E  888E   4
+ H8H %8888     `8888>   8888 ,888B .   @  '888k   @  '888k 9888  9888   888E  888E   .
+'888> 888"      8888   "8888Y 8888"   8F   8888  8F   8888 9888  9888   888E  888E  u8N.
+ "8` .8" ..     88*     `Y"   'YP    '8    8888 '8    8888 "888*""888" m888N= 888> "*88%
+    `  x8888h. d*"                   '8    888F '8    888F  ^Y"   ^Y'   `Y"   888    ""
+      !""*888%~                       %k  <88F   %k  <88F                    J88"
+      !   `"  .                        "+:*%`     "+:*%`                     @%
+      '-....:~                                                             :"
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://2013.pow.rs/atsui/wp-content/themes/dango/img/logo.fb.png">
+<meta property="og:url" content="https://2013.pow.rs/2013/01/getting-started-with-rets-for-php/">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/css/foundation.min.css">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/tobanjan.css">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" type="image/ico" href="/76x76.png">
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Don’t Screw Up: Preventing “Oh Sh—” Mistakes / Drew Powers</title>
+<link rel="canonical" href="https://2013.pow.rs/2013/01/getting-started-with-rets-for-php/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Don’t Screw Up: Preventing “Oh Sh—” Mistakes / Drew Powers" />
+<meta property="og:description" content="It’s no secret that there are good and bad ways of animating. You can either imbue meaning into a transition, or completely, utterly disorient someone. Google’s page on meaningful transitions is perhaps one of the clearest explanations of this principle as it relates to interfaces. © 2014 Google Animation’s role in web and UI has &hellip;" />
+<meta property="og:url" content="https://2013.pow.rs/2013/01/getting-started-with-rets-for-php/" />
+<meta property="og:site_name" content="Drew Powers" />
+<meta property="article:section" content="Design" />
+<meta property="article:published_time" content="2013-01-16T00:32:58+00:00" />
+<meta property="article:modified_time" content="2014-02-10T14:58:37+00:00" />
+<meta property="og:updated_time" content="2014-02-10T14:58:37+00:00" />
+<!-- / Yoast SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/atsui\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='/atsui/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.2.3' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+				<!-- WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript">//<![CDATA[
+
+					var sampling_active = 0;
+					var sampling_rate   = 100;
+					var do_request = false;
+
+					if ( !sampling_active ) {
+						do_request = true;
+					} else {
+						var num = Math.floor(Math.random() * sampling_rate) + 1;
+						do_request = ( 1 === num );
+					}
+
+					if ( do_request ) {
+
+						// Create XMLHttpRequest object and set variables
+						var xhr = ( window.XMLHttpRequest )
+						  ? new XMLHttpRequest()
+						  : new ActiveXObject( "Microsoft.XMLHTTP" ),
+						url = '/atsui/wp-admin/admin-ajax.php',
+						params = 'action=update_views_ajax&token=52cee32aea&wpp_id=919';
+						// Set request method and target URL
+						xhr.open( "POST", url, true );
+						// Set request header
+						xhr.setRequestHeader( "Content-type", "application/x-www-form-urlencoded" );
+						// Hook into onreadystatechange
+						xhr.onreadystatechange = function() {
+							if ( 4 === xhr.readyState && 200 === xhr.status ) {
+								if ( window.console && window.console.log ) {
+									window.console.log( xhr.responseText );
+								}
+							}
+						};
+						// Send request
+						xhr.send( params );
+
+					}
+
+				//]]></script>
+				<!-- End WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/kc.min.js"></script>
+</head>
+
+<body>
+<div id="site">
+<header id="head" class="row">
+  <h1 id="logo" class="large-2 columns"><a class="icon-drew" href="/atsui" title="Drew Powers / Home"><img src="/atsui/wp-content/themes/dango/img/wordmark.svg" width="64" height="64" alt="Drew Powers"></a></h1>
+  <nav id="top-navigation" class="large-10 columns"><ul class="row"><li id="nav-p" class="small-4 large-4 columns"><a class="icon-box" href="/">Portfolio</a></li><li id="nav-b" class="small-4 large-4 columns selected"><a class="icon-pentip" href="/blog/">Blog</a></li><li id="nav-c" class="small-4 large-4 columns"><a class="icon-dango" href="/contact/">Contact</a></li></ul></nav>
+</header>
+<div class="row">
+<aside id="site-info" class="large-2 columns show-for-medium-up">
+  <h2>the<br>personal<br>portfolio of<br><span class="author">Drew<br>Powers</span></h2>
+<div id="social"><a class="icon-twitter" href="https://twitter.com/drwpow" target="_blank" title="Twitter">Twitter</a> <a class="icon-dribbble" href="https://dribbble.com/drewpowers" target="_blank" title="Dribbble">Dribbble</a> <a class="icon-github" href="https://github.com/drwpow" target="_blank" title="GitHub">GitHub</a></div>
+</aside>
+<section id="main" class="large-10 columns"><div class="row">
+<div id="posts-left" class="single large-7 columns">
+<article><h1>Getting Started with RETS for PHP</h1>
+	<time datetime="2013-Jan-16">January 16, 2013</time>
+	<h2>Update: Docs</h2>
+	<p>Since the time of writing this article, the places in which I link to very pertinent, very helpful RETS references are now gone, slop-handedly replaced with a <a href="http://www.reso.org/assets/RETS/Specifications/rets_1_8.pdf" target="_blank">ridiculous PDF</a>. That’s right—whereas before you had an entire website to search through and reference and link to, now all you have is a bloody downloadable document to Ctrl+F your way into madness. So I apologize in advance for any links to DMQL, for instance, which drop you off in the middle of the Slough of Despond.</p>
+	<p>Any suggestions to better documentation are welcome, and any complaints about RESO’s documentation should be sent to <a href="mailto:info@reso.org">info@reso.org</a> (yes, I have already tried to contact them about the old documentation, but to no avail).</p>
+	<h2>Getting Started</h2>
+	<p><em>Note: R-E-A-D your way through all <strong>four</strong> exercises. I’ve tried my best to keep it short, but there is an order to follow which will lead you into understanding your own MLS server and how to start your own app.</em></p>
+	<p>There aren’t many good articles out there on working with RETS.&nbsp;The short of it is: you will have to learn a lot for yourself. This guide is intended for moderate-level programmers that just need to get to a place where they’re comfortable handling data. In this tutorial, you’ll be tackling:</p>
+	<ol>
+	<li><span style="line-height: 13px;">Seeing the tables on your server</span></li>
+	<li>Seeing the table columns on your server</li>
+	<li>Querying the RETS server for listings, based on data from Step 1 and Step 2</li>
+	<li>Downloading photos for a listing</li>
+	</ol>
+	<p>To start, a couple of terms:</p>
+	<p><code>IDX</code>&nbsp;Internet Data Exchange. Just think API. No, it’s&nbsp;<em>not</em> an API format; it’s simply a term that tells you data is being transferred, <em>like</em> an API.&nbsp;<em>That’s not helpful</em>. I know. This just gives realtors a handle to try and understand what you, the programmer, are doing. Just think of it as a realtor’s way of saying <em>API</em>.</p>
+	<p><code>RETS</code>&nbsp;Real Estate Transaction Standard. Just think <a href="http://en.wikipedia.org/wiki/SOAP" target="_blank">SOAP</a>. Again, it’s&nbsp;<em>not</em> SOAP, but it’s an XML-encapsulated response that you’ll be working with to get your data.&nbsp;<em>Wait, I’m not working with JSON!?</em>&nbsp;Don’t get me started.</p>
+	<h2>Setup</h2>
+	<p>For this example, we’ll be using <a href="https://github.com/troydavisson/PHRETS" target="_blank">PHRETS</a>. It’s a lightweight, one-file RETS library, has decent documentation, and pretty much works right out of the box. Plus, it’s still actively maintained on Github. You can<strong> <a href="https://github.com/dangodev/PHRETS-Example" target="_blank">download it with my example files</a></strong>.</p>
+	<p>The next step is getting a login to RETS. This is handled by your local MLS. In Orlando, you’d be dealing with <a href="http://www.mfrmls.com" target="_blank">MFRMLS</a>. Part of the process is developing a relationship with your MLS IDX team, and being prepared to call them a number of times to get what you need. Be patient, and understanding, and they’ll go out of their way to help you. I also assume you’re working with a realtor/broker to get this, and you’ll need to work with them too to fill out their necessary paperwork to get access. Through a series of phone calls and costs, you will eventually wind up with three things:</p>
+	<ol>
+	<li>Login URL (this is different for every MLS)</li>
+	<li>Username</li>
+	<li>Password</li>
+	</ol>
+	<p><strong>Example 1: Connecting and Viewing Server Contents with GetMetadataTypes()</strong></p>
+	<p><a href="https://github.com/dangodev/PHRETS-Example" target="_blank">Download my example files here</a>&nbsp;if you haven’t already. You’ll find the PHRETS files in <code>/lib</code>, as well as some starter code. Open&nbsp;<code>login.php</code>.</p>
+	<pre>/////////////////////////// LOGIN INFO /////////////////////////////
+
+	$login = 'http://yourmls.com/Login.asmx/Login';
+	$un = 'RETS000';
+	$pw = '##########';
+
+	////////////////////////////////////////////////////////////////////</pre>
+	<p>Edit this and save with your credentials from the previous step. Note that your URL might look completely different, but it should end in <code>/Login</code>.</p>
+	<p>Now we’re going to see what’s on the server. One thing to keep in mind: <em>your RETS server might look completely different from somebody else’s</em>. Even with a standard, databases can be set up differently. We’ll be going through a process that helps you find out what you’re working with, so expect your results to be slightly different from what I see on my server. Open&nbsp;<a href="https://github.com/dangodev/PHRETS-Example/blob/master/example1.php" target="_blank"><strong>example1.php</strong></a>. You’ll only see a few lines:</p>
+	<pre>/* Initialize Object */
+	$rets = new PHRETS;
+
+	/* Connect */
+	$connect = $rets-&gt;Connect($login, $un, $pw);
+
+	/* Query Server */
+	if($connect) {
+		$types = $rets-&gt;GetMetadataTypes();
+		print_r($types);
+		$rets-&gt;Disconnect();
+	} else {
+		$error = $rets-&gt;Error();
+		print_r($error);
+	}</pre>
+	<p>A couple things are happening here, but not too much. You can see the PHRETS object being initialized, and a connection being made to the server. You can also see that I use <code>print_r()</code> like it’s going out of style. The connection request is just a cURL with your login info being sent in the request. You don’t have to know too much about it because PHRETS handles it. If the connection is <em>successful</em>, it will print an array of all the table values; if <em>failed</em>, it will print an array containing error information. The big array of stuff should be laid out somewhat in this pattern:</p>
+	<ul>
+	<li>Office
+	<ol>
+	<li>Office</li>
+	</ol>
+	</li>
+	<li>Property
+	<ol>
+	<li>Commercial</li>
+	<li>Income</li>
+	<li>Residential</li>
+	<li>Rental</li>
+	<li>Lots and Land</li>
+	<li>Cross Property</li>
+	</ol>
+	</li>
+	<li>User
+	<ol>
+	<li>User</li>
+	</ol>
+	</li>
+	</ul>
+	<p><em>What is all this?</em> This is your key to accessing the property listings. The <strong>top-level items</strong> are called <code>Resources</code>. The <strong>sub-items</strong> are referred to as <code>Classes</code>. <strong>This is important. Remember this.</strong> You’ll see the words <em>Resource</em> and <em>Class</em> appear the more you work with RETS; this is what it’s talking about.</p>
+	<p>Each Class has its own database table, with its own unique values. <em>For example, this means Residential properties and Rental properties both have to be queried separately.</em> Obviously, how you combine/store data is up to you, but it must be accessed separately nonetheless. Additionally, Realtor Office information is simply there if you need it, and honestly I have no clue about the User section.</p>
+	<p>Taking a closer look at the actual output from <code>GetMetadataTypes()</code>, each Class should resemble this:</p>
+	<pre>...
+
+	[3] =&gt; Array
+		(
+			[ClassName] =&gt; 4
+			[VisibleName] =&gt; RES
+			[StandardName] =&gt; ResidentialProperty
+			[Description] =&gt; Residential
+			[TableVersion] =&gt; 33.04.13720
+			[TableDate] =&gt; Wed, 19 Dec 2012 05:35:20 GMT
+			[UpdateVersion] =&gt;
+			[UpdateDate] =&gt;
+		)
+
+	...</pre>
+	<p>We can ignore most of this, but pay attention to <code>ClassName</code> and <code>Description</code>. <strong>You’ll need the class name. A lot.</strong> In fact, I would recommend saving the whole output from this script somewhere for later, until you’ve memorized the ClassNames on your MLS server (did I mention you’ll be using this <em>a lot?</em>).</p>
+	<p>Once you know what these 3 things are:</p>
+	<ul>
+	<li><span style="line-height: 13px;">Resources</span></li>
+	<li>Classes</li>
+	<li>ClassNames</li>
+	</ul>
+	<p>You may proceed; if not, review. To continue, let’s see what information is stored in the <em>Residential</em> table.</p>
+	<h2>Example 2: Viewing the Table Fields with GetMetadataTable()</h2>
+	<p>Open <a href="https://github.com/dangodev/PHRETS-Example/blob/master/example2.php" target="_blank"><strong>example2.php</strong></a>. You’ll find much of the same code, but now instead of <code>GetMetadataTypes()</code> you’ll find <code>GetMetadataTable($resource, $class)</code>:</p>
+	<pre>if($connect) {
+		/* Get table layout */
+		$fields = $rets-&gt;GetMetadataTable("Property", 4);
+
+		/* Take the system name / human name and place in an array */
+		$table = array();
+		foreach($fields as $field) {
+			$table[$field['SystemName']] = $field['LongName'];
+		}
+
+		/* Display output */
+		print_r($table);
+		$rets-&gt;Disconnect();
+
+	...</pre>
+	<p>In the last example, we saw the ClassName for <em>Residential</em>&nbsp;was <code>4</code> (in some examples you’ll find the&nbsp;<code>VisibleName</code> instead). You can simply run <code>print_r($fields)</code> instead (I love <em>print_r</em>!) to look at all the juicy bits here, but we’re taking a simpler route and only getting the <code>SystemName</code> and the <code>LongName</code> (the human-readable name). It will still be pretty long:</p>
+	<pre>Array
+	(
+			[sysid] =&gt; sysid
+			[1] =&gt; Property Type
+			[3] =&gt; Record Delete Flag
+			[4] =&gt; Record Delete Date
+			[5] =&gt; Last Transaction Code
+			[9] =&gt; Photos, Number of
+			[15] =&gt; Tax ID
+			[17] =&gt; Agent ID
+			[18] =&gt; Selling Agent ID
+			[19] =&gt; County
+			[32] =&gt; Beds
+			[33] =&gt; CDOM
+			[35] =&gt; Agent Name
+			[46] =&gt; Zip Code
+			[47] =&gt; Zip Plus 4
+			[49] =&gt; Address
+			[55] =&gt; Year Built
+			[59] =&gt; Status Change Date
+			[106] =&gt; Entry Date
+			[108] =&gt; Listing Date
+			[112] =&gt; Last Update Date
+			[138] =&gt; Office ID #
+			[140] =&gt; Sold Office ID
+			[143] =&gt; Str. Dir. Pre
+			[165] =&gt; Street #
+			[175] =&gt; ML# (w/Board ID)
+			[176] =&gt; List Price
+			[178] =&gt; Status
+			[391] =&gt; Sold Price
+			[406] =&gt; Sold Date
+			[410] =&gt; Sold Agent ID
+			[421] =&gt; Street Name
+			[1334] =&gt; Additional Public Remarks
+			[1335] =&gt; Additional Parcel Y/N
+			[1349] =&gt; Property Style
+			[1350] =&gt; Building Name/Number
+			[1354] =&gt; Bonus Room (Approx.)
+			[1368] =&gt; Minimum Lease
+			[1374] =&gt; # Times per Year
+			[1375] =&gt; Taxes
+			[1381] =&gt; Dining Room (Approx.)
+			[1384] =&gt; Dinette (Approx.)
+			[1397] =&gt; Elementary School
+			[1405] =&gt; Family Room (Approx.)
+			[1415] =&gt; Living Room (Approx.)
+			[1418] =&gt; HOA Fee
+			[1420] =&gt; High School
+			[1425] =&gt; Middle or Junior School
+			[1426] =&gt; Kitchen (Approx.)
+			[1432] =&gt; Legal Description
+			[1437] =&gt; Lot #
+			[1455] =&gt; Model/Make
+			[1457] =&gt; Public Remarks
+			[1466] =&gt; Master Bedroom (Approx.)
+			[1495] =&gt; 2nd Bedroom (Approx.)
+			[1514] =&gt; 3rd Bedroom (Approx.)
+			[1518] =&gt; 4th Bedroom (Approx.)
+			[1522] =&gt; 5th Bedroom (Approx.)
+			[1660] =&gt; Special Listing Type
+			[1670] =&gt; Subdivision #
+			[1709] =&gt; Financing Available
+			[1711] =&gt; Realtor Info
+			[1716] =&gt; Architectural Style
+			[1717] =&gt; Additional Rooms
+			[1718] =&gt; Location
+			[1720] =&gt; Utilities
+			[1722] =&gt; Water Extras
+			[1723] =&gt; Fireplace Description
+			[1724] =&gt; Master Bath Features
+			[1725] =&gt; Interior Layout
+			[1726] =&gt; Interior Features
+			[1727] =&gt; Kitchen Features
+			[1728] =&gt; Appliances Included
+			[1729] =&gt; Floor Covering
+			[1731] =&gt; Heating and Fuel
+			[1732] =&gt; Air Conditioning
+			[1733] =&gt; Exterior Construction
+			[1734] =&gt; Exterior Features
+			[1735] =&gt; Roof
+			[1736] =&gt; Garage Features
+			[1737] =&gt; Pool Type
+			[1739] =&gt; Foundation
+			[1743] =&gt; Community Features
+			[2292] =&gt; Str. Dir. Post
+			[2294] =&gt; Full Baths
+			[2296] =&gt; Half Baths
+			[2298] =&gt; Price Change Date
+			[2300] =&gt; Driving Directions
+			[2302] =&gt; City
+			[2304] =&gt; State ID
+			[2306] =&gt; Street Type
+			[2314] =&gt; Legal Subdivision Name
+			[2316] =&gt; Complex/Community Name/NCCB
+			[2320] =&gt; Zoning
+			[2322] =&gt; Lot Dimensions
+			[2326] =&gt; Square Foot Source
+			[2328] =&gt; Total Acreage
+			[2334] =&gt; Listing Type
+			[2338] =&gt; Trans Broker Comp
+			[2340] =&gt; Buyer Agent Comp
+			[2344] =&gt; Non-Rep Comp
+			[2346] =&gt; Sq Ft Heated
+			[2350] =&gt; Water Name
+			[2352] =&gt; Private Pool Y/N
+			[2362] =&gt; Lot Size
+			[2368] =&gt; Office Name
+			[2386] =&gt; Sell Agent Name
+			[2390] =&gt; Sell Office Name
+			[2455] =&gt; List Agent 2 ID
+			[2497] =&gt; Virtual Tour Link
+			[2606] =&gt; List Agent 2 Name
+			[2620] =&gt; Office Primary Board ID
+			[2622] =&gt; Lot Size [SqFt]
+			[2624] =&gt; Lot Size [Acres]
+			[2708] =&gt; MLS Zip
+			[2759] =&gt; LastImgTransDate
+			[2763] =&gt; LP/SqFt
+			[2765] =&gt; SP/SqFt
+			[2769] =&gt; ADOM
+			[2779] =&gt; Area (Range)
+			[2781] =&gt; Team Name
+			[2789] =&gt; Balcony/Porch/Lanai  (Approx)
+			[2791] =&gt; Building # Floors
+			[2793] =&gt; Annual CDD Fee
+			[2795] =&gt; CDD Y/N
+			[2797] =&gt; Condo Floor #
+			[2801] =&gt; Fireplace Y/N
+			[2803] =&gt; Floors in Unit
+			[2805] =&gt; Garage/Carport
+			[2809] =&gt; Homestead Y/N
+			[2811] =&gt; Maintenance Includes
+			[2813] =&gt; Max Pet Weight
+			[2819] =&gt; Property Description
+			[2823] =&gt; Special Tax Dist.Y/N (Tampa
+			[2854] =&gt; Unit #
+			[2856] =&gt; Total Units
+			[2879] =&gt; MH Width
+			[2899] =&gt; Mo.Maint.$(addition to HOA)
+			[2901] =&gt; HOA Payment Schedule
+			[2935] =&gt; LSC List Side
+			[2945] =&gt; Studio Dimensions
+			[2983] =&gt; SW Subdv Community Name
+			[2991] =&gt; Selling Agent 2 ID
+			[2992] =&gt; Listing Office 2 ID #
+			[2993] =&gt; Selling Office 2 ID
+			[2995] =&gt; Listing Office 2 Name
+			[2996] =&gt; Selling Office 2 Name
+			[3010] =&gt; Show Prop Address on Internet
+			[3011] =&gt; Water View
+			[3015] =&gt; Green Certifications
+			[3020] =&gt; Selling Agent 2 Name
+			[3021] =&gt; Great Room (Approx.)
+			[3022] =&gt; Waterfront Feet
+			[3026] =&gt; Subdivision Section Number
+			[3027] =&gt; Total Building SF
+			[3036] =&gt; Housing for Older Persons
+			[3048] =&gt; LSC Sell Side
+			[3062] =&gt; Special Sale Provision
+			[3063] =&gt; Water Access Y/N
+			[3064] =&gt; Water View Y/N
+			[3065] =&gt; Water Frontage Y/N
+			[3066] =&gt; Water Extras Y/N
+			[3067] =&gt; Water Frontage
+			[3068] =&gt; Water Access
+			[3074] =&gt; HOA/Comm Assn
+			[3075] =&gt; Pets Allowed Y/N
+			[3076] =&gt; Pet Restrictions
+			[3077] =&gt; Study/Den Dimensions
+			[3078] =&gt; Country
+			[3080] =&gt; # of Pets
+			[3084] =&gt; New Construction
+			[3085] =&gt; Construction Status
+			[3086] =&gt; Projected Completion Date
+			[3146] =&gt; Planned Unit Development
+			[3147] =&gt; HERS Index
+			[3148] =&gt; Flood Zone Code
+			[3149] =&gt; Land Lease Fee
+			[3165] =&gt; DPR Y/N
+			[3186] =&gt; Pool
+			[3187] =&gt; Public Remarks New
+			[3189] =&gt; Condo Maintenance Fee
+			[3190] =&gt; Condo Maint. Fee Schedule
+	)</pre>
+	<p>Look at all this! This is all the data you have <em>for every listing!</em> What’s even cooler: from time-to-time, MLSs will add new fields, giving you <em>even more</em> data to work with (but the IDs will usually stay the same)! You have instant access to something most realtors don’t have. Bask in it.</p>
+	<p>When you’re done basking in the glory of big data, save this output as well because you’re going to be using <code>SystemName</code> values to query listings in the next example.</p>
+	<h2>Example 3: Searching Listings with SearchQuery()</h2>
+	<p>To recap, searching properties requires:</p>
+	<ol>
+	<li>Knowing your Server’s ClassNames (Example 1)</li>
+	<li>Knowing your Server’s SystemNames (Example 2)</li>
+	</ol>
+	<p>Once you have these 2 things, you can ask your RETS server to serve listings. Open&nbsp;<a href="https://github.com/dangodev/PHRETS-Example/blob/master/example3.php" target="_blank"><strong>example3.php</strong></a>. This time, you’ll see:</p>
+	<pre>if($connect) {
+		$sixmonths = date('Y-m-d\TH:i:s', time()-15778800); // get listings updated within last 6 months
+
+		/* Search RETS server */
+		$search = $rets-&gt;SearchQuery(
+			'Property',				// Resource
+			4,					// Class
+			'((112='.$sixmonths.'+),(178=ACT))',	// DMQL
+			array(
+				'Format'	=&gt; 'COMPACT-DECODED',
+				'Select'	=&gt; 'sysid,49,112,175,9,2302,2304',
+				'Count'		=&gt; 1,
+				'Limit'		=&gt; 20
+			)
+		);
+
+		/* If search returned results */
+		if($rets-&gt;TotalRecordsFound() &gt; 0) {
+			while($data = $rets-&gt;FetchRow($search)) {
+				print_r($data);
+			}
+		} else {
+			echo '0 Records Found';
+		}</pre>
+	<p>A lot going on here. To start, let’s look at <code>SearchQuery($resource, $class, $query[, $options])</code>. You’ll notice 3 main parameters, and an options parameter. The first 2 you know already. The third parameter is a Query in <a href="https://www.flexmls.com/support/rets/tutorials/dmql/" target="_blank">DMQL</a> (<a href="http://www.reso.org/specifications" target="_blank">Docs Here</a>). A typical DMQL Query looks like:</p>
+	<pre>( (FIELD_ONE = VALUE), (FIELD_TWO = VALUE), (FIELD_THREE = VALUE), ...)</pre>
+	<p>That would be the MySQL equivalent of:</p>
+	<pre>select * from [whatever] where FIELD_ONE = VALUE and FIELD_TWO = VALUE and FIELD_THREE = VALUE ...</pre>
+	<p>Instead of greater-than/less-than, you use <code>+</code> and <code>-</code> after the value. You can also use other comparisons as stated in the <a href="http://www.reso.org/specifications" target="_blank">documentation</a>. DMQL, as you might imagine, will be your biggest learning curve for querying RETS.</p>
+	<p>But to skip ahead of that, let’s look at the query in the example: <code>((112=2012-06-01\T00:00:00+),(178=ACT))</code> (pretend my PHP generated this date). Because there’s a <code>+</code> at the end, that means <code>112</code>, the field for <code>Last Update Date</code>, has to have a value of June 1, 2012 or more recent. The other value, <code>118</code>, requests that <code>Status</code> has to be <code>ACT</code> (Active; on the market). You can see other possible values with <a href="https://github.com/troydavisson/PHRETS/wiki/GetLookupValues" target="_blank"><code>GetLookupValues()</code></a>. We’re asking for <em>Active</em> listings that have been updated since June 1, 2012. As a sidenote, from personal experience I’ve found that listings older than that are usually forgotten/mistakes.</p>
+	<p>In the other options array, you can see the <code>Format</code>. <a href="http://www.reso.org/specifications" target="_blank"><code>COMPACT-DECODED</code></a> is a good readout for information, and I would advise leaving that. You can also choose with which fields you’d like the RETS server to respond with <code>Select</code> (in this example I’m asking for the ID, address, city, state, MLS#, Update Date, and # of Photos), as well as the number of results to <code>Limit</code> (20). <code>Count</code> can be set to:</p>
+	<ul>
+	<li><code>0</code> No record count, data</li>
+	<li><code>1</code> Record Count + data</li>
+	<li><code>2</code> Record Count, no data</li>
+	</ul>
+	<p>Obviously, <code>1</code> works best for most situations.</p>
+	<p>Running that script will result in something that looks like this:</p>
+	<pre>Array
+	(
+			[sysid] =&gt; 41268688
+			[49] =&gt; 800 N TAMIAMI TRL # 1205
+			[112] =&gt; 2012-09-28T10:28:01
+			[175] =&gt; A3966487
+			[9] =&gt; 10
+			[2302] =&gt; SARASOTA
+			[2304] =&gt; Florida
+	)
+	Array
+	(
+			[sysid] =&gt; 40701173
+			[49] =&gt; 6500 MIDNIGHT PASS RD # 204
+			[112] =&gt; 2012-10-24T15:25:53
+			[175] =&gt; A3961874
+			[9] =&gt; 11
+			[2302] =&gt; SARASOTA
+			[2304] =&gt; Florida
+	)
+
+	...</pre>
+	<p>Success! You now have all the resources you need to take that data and do something great with it.</p>
+	<p>At this point, if all you need is the data, then you’re set. In case you want to download photos, here’s the last step:</p>
+	<h2>Example 4: Downloading Photos with GetObject()</h2>
+	<p>Downloading photos is surprisingly painless, after everything else you’ve been through. As you might imagine, photos aren’t part of a database query (nor should they be!), but are a separate request. Unfortunately, photos must be requested property-by-property, but this, for once, seems like a sane way to order things. Open <a href="https://github.com/dangodev/PHRETS-Example/blob/master/example4.php" target="_blank"><b>example4.php</b></a>. You’ll find this code:</p>
+	<pre>	$sysid = '12345678';
+		$n = 1;
+		$dir = 'photos';
+		if(!is_dir($dir)) mkdir($dir); // Remember: this can only make one directory at a time
+
+		$photos = $rets-&gt;GetObject('Property', 'Photo', $sysid);
+		foreach($photos as $photo) {
+			file_put_contents($dir.'/'.$n.'.jpg', $photo['Data']);
+			$n++;
+		}
+		$rets-&gt;FreeResult($photos);
+		$rets-&gt;Disconnect();</pre>
+	<p>At this stage I don’t really see much to comment on, other than the fact that you have to use the <code>sysid</code> (from Example 3) of the property you want. It then returns an array of image file data, which can be saved with the good-ol’-fashioned <a href="http://php.net/manual/en/function.file-put-contents.php" target="_blank"><code>file_put_contents()</code></a>. The <code>$n</code> variable is simply a naming convention I use, and can be replaced with any naming structure you’d like.</p>
+	<p>In case you’re wondering, the only other data in the image array is:</p>
+	<ul>
+	<li><code>Content-ID</code> (same as the <code>sysid</code> you gave it)</li>
+	<li><code>Content-Type</code> (<code>image/jpeg</code> every time I’ve checked)</li>
+	<li><code>Object-ID</code> (a number, usually 1, 2, 3, etc. but I depend on my own count for this)</li>
+	<li><code>Success</code> (<code>0</code> or <code>1</code>—if you got this message, wouldn’t it always be <code>1</code>?)</li>
+	</ul>
+	<p>One thing I had to learn the hard way: on standard fat32 servers (read: most servers), you can only have 32,000 files and/or folders in any folder. This means if you have over 32,000 listings (many MLSs do), you can’t simply give each listing its own photo directory in the same master folder on your server; you have to break it up. For example, on <a href="http://galleonproperties.com/" target="_blank">Galleon</a>, I had to take a listing like <code>A2308004</code> out of the <code>img/A2308004</code> directory and put the images into <code>img/A/230/8004</code>. So where there used to be 32,000 folders in <code>img</code>, now there are a maximum of 26 (since each MLS number starts with a letter). End of story: don’t have too many subfolders inside one folder. You will break it.</p>
+	<h2>Conclusion</h2>
+	<p>Obviously, this was just a primer into getting started with RETS. I didn’t go into practical usage scenarios, such as different ways to query listings, and how to store that data (like in a CSV, etc.). I don’t assume to know what you’re doing with it, but you should be in pretty good shape to take that data and place it any where you please. Your best bet from here would be to study more up on <a href="http://www.reso.org/specifications" target="_blank">DMQL</a>, and see what clever things other people are doing with RETS.</p>
+	<p>If you have any RETS-based project you’re working on, let me know! I’d be glad to hear about it.</p>
+	<h2>Tips</h2>
+	<ul>
+	<li>Consult the <a href="http://www.reso.org/specifications" target="_blank">RETS Documentation</a>. It’s terrible, but all you’ve got.</li>
+	<li>P-A-R-S-E. Parse all the data you collect. These are all hand-entered by thousands of realtors, and are wrought with misspellings and case differences. Some aren’t preventable, but a lot can be managed.</li>
+	<li>Ask your MLS which RETS version they’re using. This won’t affect a whole lot, but you might run into a specific version problem later with your code. You can set the version with <code>$rets-&gt;AddHeader("RETS-Version", "RETS/1.5");</code> (1.5 is default for PHRETS).</li>
+	<li>Look into whether your MLS supports&nbsp;<em>Unlimited Key Index</em>. Typically, RETS servers will only serve a maximum number of listings if you ask for every field, but there are ways to grab all listings at once if you limit your query to only a few fields.</li>
+	<li><strike>Seriously: go look at the awesome <a href="https://retsdoc.onconfluence.com/dashboard.action" target="_blank">RETS Documentation</a></strike> Go trudge through the <a href="http://www.reso.org/specifications" target="_blank">River of Death</a> (AKA the “new” RETS documentation).</li>
+	</ul>
+	<div id="about-author">Drew Powers is a frontend developer at <a href="//envylabs.com">Envy</a>.</div>
+</article>
+</div>
+<nav class="large-5 columns show-for-medium-and-up">	<div id="sidebar" role="complementary">
+		<ul>
+			<li id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" action="https://2013.pow.rs" ><div><input type="text" value="" placeholder="Search" name="s" id="s" /><input data-icon="&#xe605;" type="submit" id="searchsubmit" value="&#xe605;"></div></form></li>
+
+<!-- WordPress Popular Posts Plugin v3.2.3 [W] [all] [views] [regular] -->
+<li id="wpp-2" class="widget popular-posts">
+<h2 class="widgettitle">Popular Posts</h2>
+
+<ul class="wpp-list">
+<li><a href="/2013/01/getting-started-with-rets-for-php/" title="Getting Started with RETS for PHP" class="wpp-post-title" target="_self">Getting Started with RETS for PHP</a> </li>
+<li><a href="/2012/09/typekit-8-replacement-fonts/" title="TypeKit: 8 Replacement Fonts" class="wpp-post-title" target="_self">TypeKit: 8 Replacement Fonts</a> </li>
+<li><a href="/2013/02/choosing-a-font-program-comparison-of-tier-i-editors/" title="Choosing a Font Program: Comparison of Tier-I Editors" class="wpp-post-title" target="_self">Choosing a Font Program: Comparison of Tier-I Editors</a> </li>
+<li><a href="/2013/12/how-do-i-install-gems/" title="How Do I Install Gems to my Rails Project?" class="wpp-post-title" target="_self">How Do I Install Gems to my Rails Project?</a> </li>
+<li><a href="/2012/12/why-does-my-onload-function-return-undefined-in-javascript/" title="Why Does My onload Function Return ‘undefined’ in JavaScript?" class="wpp-post-title" target="_self">Why Does My onload Function Return ‘undefined’ in JavaScript?</a> </li>
+
+</ul>
+</li>
+
+<!-- End WordPress Popular Posts Plugin v3.2.3 -->
+<li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+	<li class="cat-item cat-item-11"><a href="/category/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="/category/development/" >Development</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="/category/html-a-day/" >HTML A Day</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="/category/tutorial/" >Tutorial</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="/category/design/typography/" >Typography</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</li>
+<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href='/tag/ajax/' class='tag-link-78' title='1 topic' style='font-size: 8pt;'>ajax</a>
+<a href='/tag/apple/' class='tag-link-36' title='3 topics' style='font-size: 18.5pt;'>apple</a>
+<a href='/tag/aptana/' class='tag-link-71' title='2 topics' style='font-size: 14.3pt;'>aptana</a>
+<a href='/tag/art/' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>art</a>
+<a href='/tag/brand/' class='tag-link-56' title='1 topic' style='font-size: 8pt;'>brand</a>
+<a href='/tag/coffeescript/' class='tag-link-88' title='1 topic' style='font-size: 8pt;'>coffeeScript</a>
+<a href='/tag/color-profiles/' class='tag-link-72' title='1 topic' style='font-size: 8pt;'>color profiles</a>
+<a href='/tag/copyright/' class='tag-link-63' title='1 topic' style='font-size: 8pt;'>copyright</a>
+<a href='/tag/css/' class='tag-link-85' title='2 topics' style='font-size: 14.3pt;'>css</a>
+<a href='/tag/freight-sans/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>freight sans</a>
+<a href='/tag/futura/' class='tag-link-10' title='1 topic' style='font-size: 8pt;'>futura</a>
+<a href='/tag/geometric/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>geometric</a>
+<a href='/tag/gill-sans/' class='tag-link-8' title='2 topics' style='font-size: 14.3pt;'>gill sans</a>
+<a href='/tag/gotham/' class='tag-link-9' title='2 topics' style='font-size: 14.3pt;'>gotham</a>
+<a href='/tag/helvetica/' class='tag-link-5' title='1 topic' style='font-size: 8pt;'>helvetica</a>
+<a href='/tag/heroku/' class='tag-link-86' title='1 topic' style='font-size: 8pt;'>heroku</a>
+<a href='/tag/hosting/' class='tag-link-80' title='2 topics' style='font-size: 14.3pt;'>hosting</a>
+<a href='/tag/html/' class='tag-link-84' title='2 topics' style='font-size: 14.3pt;'>html</a>
+<a href='/tag/humanist/' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>humanist</a>
+<a href='/tag/interface/' class='tag-link-60' title='2 topics' style='font-size: 14.3pt;'>interface</a>
+<a href='/tag/javascript/' class='tag-link-77' title='4 topics' style='font-size: 22pt;'>javaScript</a>
+<a href='/tag/league-gothic/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>league gothic</a>
+<a href='/tag/marketing/' class='tag-link-57' title='1 topic' style='font-size: 8pt;'>marketing</a>
+<a href='/tag/neo-grotesque/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>neo-grotesque</a>
+<a href='/tag/optimization/' class='tag-link-74' title='3 topics' style='font-size: 18.5pt;'>optimization</a>
+<a href='/tag/photoshop/' class='tag-link-73' title='3 topics' style='font-size: 18.5pt;'>photoshop</a>
+<a href='/tag/php/' class='tag-link-81' title='3 topics' style='font-size: 18.5pt;'>PHP</a>
+<a href='/tag/product-design/' class='tag-link-58' title='1 topic' style='font-size: 8pt;'>product design</a>
+<a href='/tag/proxima-nova/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>proxima nova</a>
+<a href='/tag/public-domain/' class='tag-link-62' title='1 topic' style='font-size: 8pt;'>public domain</a>
+<a href='/tag/rails/' class='tag-link-89' title='2 topics' style='font-size: 14.3pt;'>rails</a>
+<a href='/tag/rets/' class='tag-link-79' title='1 topic' style='font-size: 8pt;'>RETS</a>
+<a href='/tag/ruby/' class='tag-link-70' title='4 topics' style='font-size: 22pt;'>ruby</a>
+<a href='/tag/sans-serif/' class='tag-link-7' title='2 topics' style='font-size: 14.3pt;'>sans-serif</a>
+<a href='/tag/serif/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>serif</a>
+<a href='/tag/slab-serif/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>slab serif</a>
+<a href='/tag/srgb/' class='tag-link-75' title='1 topic' style='font-size: 8pt;'>sRGB</a>
+<a href='/tag/trade-gothic/' class='tag-link-48' title='1 topic' style='font-size: 8pt;'>trade gothic</a>
+<a href='/tag/typekit/' class='tag-link-45' title='2 topics' style='font-size: 14.3pt;'>typekit</a>
+<a href='/tag/ucf/' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>UCF</a>
+<a href='/tag/web/' class='tag-link-90' title='1 topic' style='font-size: 8pt;'>web</a>
+<a href='/tag/web-fonts/' class='tag-link-42' title='4 topics' style='font-size: 22pt;'>web fonts</a>
+<a href='/tag/windows/' class='tag-link-76' title='2 topics' style='font-size: 14.3pt;'>windows</a>
+<a href='/tag/wordpress/' class='tag-link-87' title='1 topic' style='font-size: 8pt;'>wordpress</a></div>
+</li>
+		</ul>
+	</div>
+</nav>
+</div></section></div>
+</div>
+<div id="lunchrush"></div>
+<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/dom-ready.js"></script>
+</body>
+</html>

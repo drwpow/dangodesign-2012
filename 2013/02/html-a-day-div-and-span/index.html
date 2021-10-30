@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+      ...                         ..                    ..
+   xH88"`~ .x8X                 dF                     888B.
+ :8888   .f"8888Hf        u.   '88bu.                 48888E
+:8888>  X8L  ^""`   ...ue888b  '*88888bu        .u    '8888'
+X8888  X888h        888R Y888r   ^"*8888N    ud8888.   Y88F
+88888  !88888.      888R I888>  beWE "888L :888'8888.  '88
+88888   %88888      888R I888>  888E  888E d888 '88%"   8F
+88888 '> `8888>     888R I888>  888E  888E 8888.+"      4
+`8888L %  ?888   ! u8888cJ888   888E  888F 8888L        .
+ `8888  `-*""   /   "*888*P"   .888N..888  '8888c. .+  u8N.
+   "888.      :"      'Y"       `"888*""    "88888%   "*88%
+     `""***~"`                     ""         "YP'      ""
+                                                                                      ..
+         .xHL                                                            .uef^"     888B.
+      .-`8888hxxx~       x.    .          ..         ..                :d88E       48888E
+   .H8X  `%888*"       .@88k  z88u      .@88i      .@88i         u     `888E       '8888'
+   888X     ..x..     ~"8888 ^8888     ""%888>    ""%888>     us888u.   888E .z8k   Y88F
+  '8888k .x8888888x     8888  888R       '88%       '88%   .@88 "8888"  888E~?888L  '88
+   ?8888X    "88888X    8888  888R     ..dILr~`   ..dILr~` 9888  9888   888E  888E   8F
+    ?8888X    '88888>   8888  888R    '".-%88b   '".-%88b  9888  9888   888E  888E   4
+ H8H %8888     `8888>   8888 ,888B .   @  '888k   @  '888k 9888  9888   888E  888E   .
+'888> 888"      8888   "8888Y 8888"   8F   8888  8F   8888 9888  9888   888E  888E  u8N.
+ "8` .8" ..     88*     `Y"   'YP    '8    8888 '8    8888 "888*""888" m888N= 888> "*88%
+    `  x8888h. d*"                   '8    888F '8    888F  ^Y"   ^Y'   `Y"   888    ""
+      !""*888%~                       %k  <88F   %k  <88F                    J88"
+      !   `"  .                        "+:*%`     "+:*%`                     @%
+      '-....:~                                                             :"
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://2013.pow.rs/atsui/wp-content/themes/dango/img/logo.fb.png">
+<meta property="og:url" content="https://2013.pow.rs/2013/02/html-a-day-div-and-span/">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/css/foundation.min.css">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/tobanjan.css">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" type="image/ico" href="/76x76.png">
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>HTML a Day: &lt;div&gt; and &lt;span&gt; / Drew Powers</title>
+<link rel="canonical" href="https://2013.pow.rs/2013/02/html-a-day-div-and-span/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="HTML a Day: &lt;div&gt; and &lt;span&gt; / Drew Powers" />
+<meta property="og:description" content="It’s no secret that there are good and bad ways of animating. You can either imbue meaning into a transition, or completely, utterly disorient someone. Google’s page on meaningful transitions is perhaps one of the clearest explanations of this principle as it relates to interfaces. © 2014 Google Animation’s role in web and UI has &hellip;" />
+<meta property="og:url" content="https://2013.pow.rs/2013/02/html-a-day-div-and-span/" />
+<meta property="og:site_name" content="Drew Powers" />
+<meta property="article:section" content="Design" />
+<meta property="article:published_time" content="2013-02-08T13:11:28+00:00" />
+<meta property="article:modified_time" content="2013-05-07T17:01:55+00:00" />
+<meta property="og:updated_time" content="2013-05-07T17:01:55+00:00" />
+<!-- / Yoast SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/atsui\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='/atsui/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.2.3' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+				<!-- WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript">//<![CDATA[
+
+					var sampling_active = 0;
+					var sampling_rate   = 100;
+					var do_request = false;
+
+					if ( !sampling_active ) {
+						do_request = true;
+					} else {
+						var num = Math.floor(Math.random() * sampling_rate) + 1;
+						do_request = ( 1 === num );
+					}
+
+					if ( do_request ) {
+
+						// Create XMLHttpRequest object and set variables
+						var xhr = ( window.XMLHttpRequest )
+						  ? new XMLHttpRequest()
+						  : new ActiveXObject( "Microsoft.XMLHTTP" ),
+						url = '/atsui/wp-admin/admin-ajax.php',
+						params = 'action=update_views_ajax&token=52cee32aea&wpp_id=919';
+						// Set request method and target URL
+						xhr.open( "POST", url, true );
+						// Set request header
+						xhr.setRequestHeader( "Content-type", "application/x-www-form-urlencoded" );
+						// Hook into onreadystatechange
+						xhr.onreadystatechange = function() {
+							if ( 4 === xhr.readyState && 200 === xhr.status ) {
+								if ( window.console && window.console.log ) {
+									window.console.log( xhr.responseText );
+								}
+							}
+						};
+						// Send request
+						xhr.send( params );
+
+					}
+
+				//]]></script>
+				<!-- End WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/kc.min.js"></script>
+</head>
+
+<body>
+<div id="site">
+<header id="head" class="row">
+  <h1 id="logo" class="large-2 columns"><a class="icon-drew" href="/atsui" title="Drew Powers / Home"><img src="/atsui/wp-content/themes/dango/img/wordmark.svg" width="64" height="64" alt="Drew Powers"></a></h1>
+  <nav id="top-navigation" class="large-10 columns"><ul class="row"><li id="nav-p" class="small-4 large-4 columns"><a class="icon-box" href="/">Portfolio</a></li><li id="nav-b" class="small-4 large-4 columns selected"><a class="icon-pentip" href="/blog/">Blog</a></li><li id="nav-c" class="small-4 large-4 columns"><a class="icon-dango" href="/contact/">Contact</a></li></ul></nav>
+</header>
+<div class="row">
+<aside id="site-info" class="large-2 columns show-for-medium-up">
+  <h2>the<br>personal<br>portfolio of<br><span class="author">Drew<br>Powers</span></h2>
+<div id="social"><a class="icon-twitter" href="https://twitter.com/drwpow" target="_blank" title="Twitter">Twitter</a> <a class="icon-dribbble" href="https://dribbble.com/drewpowers" target="_blank" title="Dribbble">Dribbble</a> <a class="icon-github" href="https://github.com/drwpow" target="_blank" title="GitHub">GitHub</a></div>
+</aside>
+<section id="main" class="large-10 columns"><div class="row">
+<div id="posts-left" class="single large-7 columns">
+<article><h1>HTML a Day: &lt;div&gt; and &lt;span&gt;</h1>
+	<time datetime="2013-Feb-08">February 8, 2013</time>
+	<p><em>There are 2 types of tags in this world: <code>div</code> tags and <code>span</code> tags.</em> Mastering both is one of the foundational principles of HTML, as every tag in HTML is either classified as one or the other.</p>
+	<h2>The <code>div</code> Tag</h2>
+	<p>Div tags are dividers that separate a page into <strong>blocks</strong>. This means that if you don’t tell the <code>&lt;div&gt;</code> how wide it needs to be, it will stretch horizontally and take up <strong>as much space as possible</strong>. Keeping in line with a graphic design grid, imagine your website in a series of blocks. Paired with CSS, you can separate your whole layout into &lt;div&gt;s.</p>
+	<ol>
+	<li><a href="//codepen.io/dangodev/pen/KfJIa" target="_blank">Example 1: Basic &lt;div&gt; usage.</a></li>
+	<li><a href="//codepen.io/dangodev/pen/bClgE" target="_blank">Example 2: Laying out a website with &lt;div&gt;</a></li>
+	</ol>
+	<p>Wherever you need a “block” of something, use a <code>&lt;div&gt;</code>tag. That’s why they are referred to&nbsp;as a&nbsp;<em><a href="http://en.wikipedia.org/wiki/Block-level_element#Block_elements" target="_blank">block-level element</a>.</em> Although they have different default styles attached to them, these tags will behave similarly to &lt;div&gt; tags, filling up all horizontal space possible:</p>
+	<ul>
+	<li><code>&lt;p&gt;</code> —&nbsp;<em>Paragraph</em></li>
+	<li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc. — <em>Heading Tags</em></li>
+	<li><code>&lt;ul&gt;</code> —&nbsp;<em>Undordered (Bulleted) List</em></li>
+	<li><code>&lt;ol&gt;</code> — <em>Ordered (Numbered) List</em></li>
+	<li><code>&lt;pre&gt;</code> — <em>Preformatted Text (Preserve white spaces and line breaks; useful for displaying code)</em></li>
+	<li><code>&lt;section&gt;</code> &amp; <code>&lt;article&gt;</code> — <em>Same as <code>div</code> (differences <a href="//oli.jp/2009/html5-structure1/" target="_blank">explained here</a>)</em>
+	</li></ul>
+	<h2>The <code>span</code> Tag</h2>
+	<p>Span tags are <strong>inline elements</strong>. This means that unline <code>div</code> tags, they take up <strong>as little space as possible</strong>. Instead, they stretch over text, and are most commonly used to format a few words in a paragraph, insert a link, or even be used creatively for advanced text stylization.</p>
+	<ol>
+	<li><a href="//codepen.io/dangodev/pen/uBIoA" target="_blank">Example 1: basic &lt;span&gt; examples</a></li>
+	<li><a href="//codepen.io/dangodev/pen/qLlKn" target="_blank">Example 2: &lt;span&gt; and CSS</a></li>
+	</ol>
+	<p>Because span tags stay <em>inline</em> with the text, they are known as <em><a href="http://en.wikipedia.org/wiki/Block-level_element#Inline_elements" target="_blank">inline-level elements</a>.</em> These tags normally can’t fill up space, and are only used for styling within <code>div</code> tags. Some examples of inline tags include:</p>
+	<ul>
+	<li><code>&lt;strong&gt;</code> — <em>Bold (preferred alternative to &lt;b&gt;)</em></li>
+	<li><code>&lt;em&gt;</code> — <em>Italic (preferred alternative to &lt;em&gt;)</em></li>
+	<li><code>&lt;a&gt;</code> — <em>Anchor Link</em></li>
+	<li><code>&lt;code&gt;</code> — <em>Code snippet (similar to &lt;pre&gt;, but doesn’t fill up space)</em></li>
+	<li><code>&lt;small&gt;</code> —&nbsp;<em>Small text</em></li>
+	<li><code>&lt;sub&gt;</code> — <em>Subscript</em></li>
+	<li><code>&lt;sup&gt;</code> — <em>Superscript</em></li>
+	</ul>
+	<h2>Exceptions</h2>
+	<p>Remember how I said there were only 2 types of tags? Well, I lied. Technically, <code>&lt;table&gt;</code>, <code>&lt;img&gt;</code>, and <code>&lt;form&gt;</code>&nbsp;are neither block nor inline elements. As you might imagine, these are somewhere in between block and inline, but you’ll be able to figure these out in no time after you have a firm understanding of div and span.</p>
+	<h2>TL;DR</h2>
+	<p>Use <code>div</code> and <code>p</code> tags for big blocks of content.</p>
+	<p>Use <code>span</code> tags for text colors and styling.</p>
+	<h2>Tips</h2>
+	<ul>
+	<li><span style="line-height: 13px;">Whenever you learn a new tag, find out whether it’s a block (div), inline (span), or neither.</span></li>
+	<li>You can change the tag’s display type between block, inline, or one of the other types using CSS’s <code><a href="https://developer.mozilla.org/en-US/docs/CSS/display" target="_blank">display</a></code> property.</li>
+	</ul>
+	<div id="about-author">Drew Powers is a frontend developer at <a href="//envylabs.com">Envy</a>.</div>
+</article>
+</div>
+<nav class="large-5 columns show-for-medium-and-up">	<div id="sidebar" role="complementary">
+		<ul>
+			<li id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" action="https://2013.pow.rs" ><div><input type="text" value="" placeholder="Search" name="s" id="s" /><input data-icon="&#xe605;" type="submit" id="searchsubmit" value="&#xe605;"></div></form></li>
+
+<!-- WordPress Popular Posts Plugin v3.2.3 [W] [all] [views] [regular] -->
+<li id="wpp-2" class="widget popular-posts">
+<h2 class="widgettitle">Popular Posts</h2>
+
+<ul class="wpp-list">
+<li><a href="/2013/01/getting-started-with-rets-for-php/" title="Getting Started with RETS for PHP" class="wpp-post-title" target="_self">Getting Started with RETS for PHP</a> </li>
+<li><a href="/2012/09/typekit-8-replacement-fonts/" title="TypeKit: 8 Replacement Fonts" class="wpp-post-title" target="_self">TypeKit: 8 Replacement Fonts</a> </li>
+<li><a href="/2013/02/choosing-a-font-program-comparison-of-tier-i-editors/" title="Choosing a Font Program: Comparison of Tier-I Editors" class="wpp-post-title" target="_self">Choosing a Font Program: Comparison of Tier-I Editors</a> </li>
+<li><a href="/2013/12/how-do-i-install-gems/" title="How Do I Install Gems to my Rails Project?" class="wpp-post-title" target="_self">How Do I Install Gems to my Rails Project?</a> </li>
+<li><a href="/2012/12/why-does-my-onload-function-return-undefined-in-javascript/" title="Why Does My onload Function Return ‘undefined’ in JavaScript?" class="wpp-post-title" target="_self">Why Does My onload Function Return ‘undefined’ in JavaScript?</a> </li>
+
+</ul>
+</li>
+
+<!-- End WordPress Popular Posts Plugin v3.2.3 -->
+<li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+	<li class="cat-item cat-item-11"><a href="/category/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="/category/development/" >Development</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="/category/html-a-day/" >HTML A Day</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="/category/tutorial/" >Tutorial</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="/category/design/typography/" >Typography</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</li>
+<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href='/tag/ajax/' class='tag-link-78' title='1 topic' style='font-size: 8pt;'>ajax</a>
+<a href='/tag/apple/' class='tag-link-36' title='3 topics' style='font-size: 18.5pt;'>apple</a>
+<a href='/tag/aptana/' class='tag-link-71' title='2 topics' style='font-size: 14.3pt;'>aptana</a>
+<a href='/tag/art/' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>art</a>
+<a href='/tag/brand/' class='tag-link-56' title='1 topic' style='font-size: 8pt;'>brand</a>
+<a href='/tag/coffeescript/' class='tag-link-88' title='1 topic' style='font-size: 8pt;'>coffeeScript</a>
+<a href='/tag/color-profiles/' class='tag-link-72' title='1 topic' style='font-size: 8pt;'>color profiles</a>
+<a href='/tag/copyright/' class='tag-link-63' title='1 topic' style='font-size: 8pt;'>copyright</a>
+<a href='/tag/css/' class='tag-link-85' title='2 topics' style='font-size: 14.3pt;'>css</a>
+<a href='/tag/freight-sans/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>freight sans</a>
+<a href='/tag/futura/' class='tag-link-10' title='1 topic' style='font-size: 8pt;'>futura</a>
+<a href='/tag/geometric/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>geometric</a>
+<a href='/tag/gill-sans/' class='tag-link-8' title='2 topics' style='font-size: 14.3pt;'>gill sans</a>
+<a href='/tag/gotham/' class='tag-link-9' title='2 topics' style='font-size: 14.3pt;'>gotham</a>
+<a href='/tag/helvetica/' class='tag-link-5' title='1 topic' style='font-size: 8pt;'>helvetica</a>
+<a href='/tag/heroku/' class='tag-link-86' title='1 topic' style='font-size: 8pt;'>heroku</a>
+<a href='/tag/hosting/' class='tag-link-80' title='2 topics' style='font-size: 14.3pt;'>hosting</a>
+<a href='/tag/html/' class='tag-link-84' title='2 topics' style='font-size: 14.3pt;'>html</a>
+<a href='/tag/humanist/' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>humanist</a>
+<a href='/tag/interface/' class='tag-link-60' title='2 topics' style='font-size: 14.3pt;'>interface</a>
+<a href='/tag/javascript/' class='tag-link-77' title='4 topics' style='font-size: 22pt;'>javaScript</a>
+<a href='/tag/league-gothic/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>league gothic</a>
+<a href='/tag/marketing/' class='tag-link-57' title='1 topic' style='font-size: 8pt;'>marketing</a>
+<a href='/tag/neo-grotesque/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>neo-grotesque</a>
+<a href='/tag/optimization/' class='tag-link-74' title='3 topics' style='font-size: 18.5pt;'>optimization</a>
+<a href='/tag/photoshop/' class='tag-link-73' title='3 topics' style='font-size: 18.5pt;'>photoshop</a>
+<a href='/tag/php/' class='tag-link-81' title='3 topics' style='font-size: 18.5pt;'>PHP</a>
+<a href='/tag/product-design/' class='tag-link-58' title='1 topic' style='font-size: 8pt;'>product design</a>
+<a href='/tag/proxima-nova/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>proxima nova</a>
+<a href='/tag/public-domain/' class='tag-link-62' title='1 topic' style='font-size: 8pt;'>public domain</a>
+<a href='/tag/rails/' class='tag-link-89' title='2 topics' style='font-size: 14.3pt;'>rails</a>
+<a href='/tag/rets/' class='tag-link-79' title='1 topic' style='font-size: 8pt;'>RETS</a>
+<a href='/tag/ruby/' class='tag-link-70' title='4 topics' style='font-size: 22pt;'>ruby</a>
+<a href='/tag/sans-serif/' class='tag-link-7' title='2 topics' style='font-size: 14.3pt;'>sans-serif</a>
+<a href='/tag/serif/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>serif</a>
+<a href='/tag/slab-serif/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>slab serif</a>
+<a href='/tag/srgb/' class='tag-link-75' title='1 topic' style='font-size: 8pt;'>sRGB</a>
+<a href='/tag/trade-gothic/' class='tag-link-48' title='1 topic' style='font-size: 8pt;'>trade gothic</a>
+<a href='/tag/typekit/' class='tag-link-45' title='2 topics' style='font-size: 14.3pt;'>typekit</a>
+<a href='/tag/ucf/' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>UCF</a>
+<a href='/tag/web/' class='tag-link-90' title='1 topic' style='font-size: 8pt;'>web</a>
+<a href='/tag/web-fonts/' class='tag-link-42' title='4 topics' style='font-size: 22pt;'>web fonts</a>
+<a href='/tag/windows/' class='tag-link-76' title='2 topics' style='font-size: 14.3pt;'>windows</a>
+<a href='/tag/wordpress/' class='tag-link-87' title='1 topic' style='font-size: 8pt;'>wordpress</a></div>
+</li>
+		</ul>
+	</div>
+</nav>
+</div></section></div>
+</div>
+<div id="lunchrush"></div>
+<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/dom-ready.js"></script>
+</body>
+</html>

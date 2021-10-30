@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--
+      ...                         ..                    ..
+   xH88"`~ .x8X                 dF                     888B.
+ :8888   .f"8888Hf        u.   '88bu.                 48888E
+:8888>  X8L  ^""`   ...ue888b  '*88888bu        .u    '8888'
+X8888  X888h        888R Y888r   ^"*8888N    ud8888.   Y88F
+88888  !88888.      888R I888>  beWE "888L :888'8888.  '88
+88888   %88888      888R I888>  888E  888E d888 '88%"   8F
+88888 '> `8888>     888R I888>  888E  888E 8888.+"      4
+`8888L %  ?888   ! u8888cJ888   888E  888F 8888L        .
+ `8888  `-*""   /   "*888*P"   .888N..888  '8888c. .+  u8N.
+   "888.      :"      'Y"       `"888*""    "88888%   "*88%
+     `""***~"`                     ""         "YP'      ""
+                                                                                      ..
+         .xHL                                                            .uef^"     888B.
+      .-`8888hxxx~       x.    .          ..         ..                :d88E       48888E
+   .H8X  `%888*"       .@88k  z88u      .@88i      .@88i         u     `888E       '8888'
+   888X     ..x..     ~"8888 ^8888     ""%888>    ""%888>     us888u.   888E .z8k   Y88F
+  '8888k .x8888888x     8888  888R       '88%       '88%   .@88 "8888"  888E~?888L  '88
+   ?8888X    "88888X    8888  888R     ..dILr~`   ..dILr~` 9888  9888   888E  888E   8F
+    ?8888X    '88888>   8888  888R    '".-%88b   '".-%88b  9888  9888   888E  888E   4
+ H8H %8888     `8888>   8888 ,888B .   @  '888k   @  '888k 9888  9888   888E  888E   .
+'888> 888"      8888   "8888Y 8888"   8F   8888  8F   8888 9888  9888   888E  888E  u8N.
+ "8` .8" ..     88*     `Y"   'YP    '8    8888 '8    8888 "888*""888" m888N= 888> "*88%
+    `  x8888h. d*"                   '8    888F '8    888F  ^Y"   ^Y'   `Y"   888    ""
+      !""*888%~                       %k  <88F   %k  <88F                    J88"
+      !   `"  .                        "+:*%`     "+:*%`                     @%
+      '-....:~                                                             :"
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://2013.pow.rs/atsui/wp-content/themes/dango/img/logo.fb.png">
+<meta property="og:url" content="https://2013.pow.rs/2013/11/coffeescript-javascript-touch-events/">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/css/foundation.min.css">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/tobanjan.css">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" type="image/ico" href="/76x76.png">
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>What Traditional Animation History Can Teach Us About UI Design / Drew Powers</title>
+<link rel="canonical" href="https://2013.pow.rs/2013/11/coffeescript-javascript-touch-events/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="What Traditional Animation History Can Teach Us About UI Design / Drew Powers" />
+<meta property="og:description" content="It’s no secret that there are good and bad ways of animating. You can either imbue meaning into a transition, or completely, utterly disorient someone. Google’s page on meaningful transitions is perhaps one of the clearest explanations of this principle as it relates to interfaces. © 2014 Google Animation’s role in web and UI has &hellip;" />
+<meta property="og:url" content="https://2013.pow.rs/2013/11/coffeescript-javascript-touch-events/" />
+<meta property="og:site_name" content="Drew Powers" />
+<meta property="article:section" content="Design" />
+<meta property="article:published_time" content="2013-11-19T20:51:53+00:00" />
+<meta property="article:modified_time" content="2013-11-20T12:20:53+00:00" />
+<meta property="og:updated_time" content="2013-11-20T12:20:53+00:00" />
+<meta property="og:image" content="https://2013.pow.rs/atsui/atsui/wp-content/uploads/2013/11/touch-tracker.jpg">
+<meta property="og:image" content="https://2013.pow.rs/atsui/atsui/wp-content/uploads/2013/11/swipe-events.png">
+<!-- / Yoast SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/atsui\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='/atsui/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.2.3' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+				<!-- WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript">//<![CDATA[
+
+					var sampling_active = 0;
+					var sampling_rate   = 100;
+					var do_request = false;
+
+					if ( !sampling_active ) {
+						do_request = true;
+					} else {
+						var num = Math.floor(Math.random() * sampling_rate) + 1;
+						do_request = ( 1 === num );
+					}
+
+					if ( do_request ) {
+
+						// Create XMLHttpRequest object and set variables
+						var xhr = ( window.XMLHttpRequest )
+						  ? new XMLHttpRequest()
+						  : new ActiveXObject( "Microsoft.XMLHTTP" ),
+						url = '/atsui/wp-admin/admin-ajax.php',
+						params = 'action=update_views_ajax&token=52cee32aea&wpp_id=919';
+						// Set request method and target URL
+						xhr.open( "POST", url, true );
+						// Set request header
+						xhr.setRequestHeader( "Content-type", "application/x-www-form-urlencoded" );
+						// Hook into onreadystatechange
+						xhr.onreadystatechange = function() {
+							if ( 4 === xhr.readyState && 200 === xhr.status ) {
+								if ( window.console && window.console.log ) {
+									window.console.log( xhr.responseText );
+								}
+							}
+						};
+						// Send request
+						xhr.send( params );
+
+					}
+
+				//]]></script>
+				<!-- End WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/kc.min.js"></script>
+</head>
+
+<body>
+<div id="site">
+<header id="head" class="row">
+  <h1 id="logo" class="large-2 columns"><a class="icon-drew" href="/atsui" title="Drew Powers / Home"><img src="/atsui/wp-content/themes/dango/img/wordmark.svg" width="64" height="64" alt="Drew Powers"></a></h1>
+  <nav id="top-navigation" class="large-10 columns"><ul class="row"><li id="nav-p" class="small-4 large-4 columns"><a class="icon-box" href="/">Portfolio</a></li><li id="nav-b" class="small-4 large-4 columns selected"><a class="icon-pentip" href="/blog/">Blog</a></li><li id="nav-c" class="small-4 large-4 columns"><a class="icon-dango" href="/contact/">Contact</a></li></ul></nav>
+</header>
+<div class="row">
+<aside id="site-info" class="large-2 columns show-for-medium-up">
+  <h2>the<br>personal<br>portfolio of<br><span class="author">Drew<br>Powers</span></h2>
+<div id="social"><a class="icon-twitter" href="https://twitter.com/drwpow" target="_blank" title="Twitter">Twitter</a> <a class="icon-dribbble" href="https://dribbble.com/drewpowers" target="_blank" title="Dribbble">Dribbble</a> <a class="icon-github" href="https://github.com/drwpow" target="_blank" title="GitHub">GitHub</a></div>
+</aside>
+<section id="main" class="large-10 columns"><div class="row">
+<div id="posts-left" class="single large-7 columns">
+<article><h1>CoffeeScript: JavaScript Touch Events</h1>
+	<time datetime="2013-Nov-19">November 19, 2013</time>
+	<p>We’re going to be building a from-scratch (<em>library agnostic</em>) touch event system using JavaScript and CoffeeScript.</p>
+	<p><em>Huh?</em></p>
+	<p>You know, when you move your finger around the screen on a touch device? We’re going to be writing the JavaScript to keep track of all that. Instead of, you know, relying on plugins that don’t do exactly what you want.</p>
+	<h2>Goal</h2>
+	<p>Our final product: a pure JS solution for fine-tuning your touch and swipe events. You can not only track a touch event like using <a href="http://api.jquerymobile.com/swipe/" target="_blank" rel="nofollow">jQuery Mobile’s Swipe Event</a>, but you can fine-tune how you think your program can work. Maybe you want to invent your own gesture. Maybe you think swipes should be triggered by a bit more distance. Maybe edge swipes drive you nuts. Maybe you just want to learn CoffeeScript and this was the first article your poor, poor soul stumbled upon.</p>
+	<h2>Requirements</h2>
+	<p>Get <a href="http://incident57.com/codekit/" target="_blank">CodeKit</a>. No, seriously. Download the free trial if you’re poor. When you’ve added your working directory to CodeKit, it handles compiling automatically.</p>
+	<p>What, already used your free trial? Install <strong>NodeJS</strong> with the CoffeeScript module and run something like</p>
+	<pre>coffee -c -w myfile.coffee</pre>
+	<p>from your Terminal while you work.</p>
+	<p>Also, I recommend using <strong>Google Chrome</strong> for testing. Recent versions have a <strong>Enable Touch Events</strong> setting in your Console settings (the little gear at bottom of the Console). This basically turns your mouse into a finger (ew?).</p>
+	<h2>What’s CoffeeScript? Why CoffeeScript?</h2>
+	<p>For the uninitiated, CoffeeScript compiles into pretty clean JavaScript.</p>
+	<p><em>So why not just vanilla JavaScript, then? Cut the middle-man?</em></p>
+	<p>CoffeeScript is primarily a time-saver. Saves you from writing a lot of JavaScript syntax, and saves you time in reading it with its legible nature and stripped-down syntax. You can look up more debates over the subject than you would ever care to read, but perhaps a good, practical reason to pay attention to it is: with its increasing popularity you might come across somebody’s CoffeeScript one day; wouldn’t you like to understand it?</p>
+	<p><a href="http://codepen.io/dangodev/pen/kFpmh" target="_blank" title="View Demo on CodePen"><img src="/atsui/wp-content/uploads/2013/11/touch-tracker.jpg" alt="CoffeeScript touch based events: view on CodePen" class="alignnone size-full wp-image-774" width="1200" height="655"></a></p><a href="http://codepen.io/dangodev/pen/kFpmh" target="_blank" title="View Demo on CodePen">
+	</a><p><a href="http://codepen.io/dangodev/pen/kFpmh" target="_blank" title="View Demo on CodePen"><i class="icon-link"></i> View the Demo on CodePen (Touch Only) →</a></p>
+	<h2>Getting Started</h2>
+	<p>We’re gonna get through this one real quick. To make sense of everything, let’s start with HTML:</p>
+	<pre>&lt;style&gt;
+			#touch-area    {
+					width: 500px;
+					height: 500px;
+					background: orange;
+			}
+	&lt;/style&gt;
+
+	&lt;canvas id="touch-area"&gt;&lt;/canvas&gt;
+	</pre>
+	<p>This is the area to be manipulated. And obviously, this goes in a <code>.html</code> file somewhere. To start tracking touch events on this element, let’s write some CoffeeScript in a separate <strong><code>.coffee</code></strong> file (have CodeKit export this to a <strong><code>.js</code></strong> file, and include that with a <code>&lt;script&gt;</code> anywhere below the HTML element). Something like:</p>
+	<pre>touchCanvas = document.getElementById 'touch-area'
+	touchTracker = new TouchTracker(touchCanvas, {swipeThreshold: 400})
+	</pre>
+	<p>As you might have guessed, this does nothing yet, because we haven’t created the class. But our goal, which will hopefully clarify things, is to aim for something with a <strong>target element</strong> for our first parameter (the element to be tracked), and an optional <strong>options object</strong> for our second parameter. Having put our cart before the horse (or in other words, how I code things), we can now create said class:</p>
+	<pre>class TouchTracker
+		constructor: (@element, params={}) -&gt;
+
+
+
+
+	touchCanvas = document.getElementById 'touch-area'
+	touchTracker = new TouchTracker(touchCanvas, {swipeThreshold: 400})
+	</pre>
+	<p><em><strong>Note:</strong> CoffeeScript is <strong>NOT</strong> white-space ignorant, so indentations and spacing matter for the most bit. Extra lines are OK, but watch your tabs.</em></p>
+	<p>We named our class <code>TouchTracker</code>. Because, you know, we’re tracking… whatever. In CoffeeScript, the <strong>constructor</strong> is code that fires off immediately whenever you invoke this class. We can see our two parameters in the constructor class, and the little <code>={}</code> is a beautiful CoffeeScript way of making a parameter optional. Now to set up the rest of the defaults:</p>
+	<pre>class TouchTracker
+		constructor: (@element, params={}) -&gt;
+			# Defaults
+
+			# Distance, in pixels, a touch event can travel while still being considered a “tap”
+			@tapThreshold = params.tapThreshold ? 20
+
+			# Maximum time, in milliseconds, for a Tap event (any longer is considered a “Hold”, or something else)
+			@tapTimeoud = params.tapTimeoud ? 500
+
+				# Should a Tap be triggered if a touch event drops off an edge of the screen?
+			@tapSlideOff = params.tapSlideOff ? false
+
+			# Distance, in pixels, of a “drag” needed to trigger Swipe
+			@swipeThreshold = params.swipeThreshold ? 300
+
+			# Should a Swipe be triggered if a drag drops off an edge of the screen?
+			@swipeSlideOff = params.swipeSlideOff ? false
+
+			startX: =&gt; 0
+			startY: =&gt; 0
+			endX: =&gt; 0
+			endY: =&gt; 0
+
+			@element.addEventListener "touchstart", (e) =&gt; @touchStartHandler(e)
+			@element.addEventListener "touchend", (e) =&gt; @touchEndHandler(e)
+	</pre>
+	<p>You can see the conditional statements such as <code>@tapThreshold = params.tapThreshold ? 20</code>. From now on, we can call those variables, and those will get filled with our default values if the user doesn’t provide any. The <code>startX</code> and <code>startY</code> variables, by contrast, are something that don’t need to be manipulated, but our object will need them later.</p>
+	<h2>Making Touch Events</h2>
+	<p>If you try and run this, nothing good will come of it because we still haven’t built our <code>touchStartHandler</code> and <code>touchEndHandler</code> functions. Let’s do that now:</p>
+	<pre>class TouchTracker
+		constructor: (@element, params={}) -&gt;
+			# Defaults
+
+			# Distance, in pixels, a touch event can travel while still being considered a “tap”
+			@tapThreshold = params.tapThreshold ? 20
+
+			# Maximum time, in milliseconds, for a Tap event (any longer is considered a “Hold”, or something else)
+			@tapTimeoud = params.tapTimeoud ? 500
+
+				# Should a Tap be triggered if a touch event drops off an edge of the screen?
+			@tapSlideOff = params.tapSlideOff ? false
+
+			# Distance, in pixels, of a “drag” needed to trigger Swipe
+			@swipeThreshold = params.swipeThreshold ? 300
+
+			# Should a Swipe be triggered if a drag drops off an edge of the screen?
+			@swipeSlideOff = params.swipeSlideOff ? false
+
+			startX: =&gt; 0
+			startY: =&gt; 0
+			endX: =&gt; 0
+			endY: =&gt; 0
+
+			@element.addEventListener "touchstart", (e) =&gt; @touchStartHandler(e)
+			@element.addEventListener "touchend", (e) =&gt; @touchEndHandler(e)
+
+		touchStartHandler: (e) =&gt;
+			@startX = e.touches[0].pageX
+			@startY = e.touches[0].pageY
+
+		touchEndHandler: (e) =&gt;
+			@endX = e.changedTouches[0].pageX
+			@endY = e.changedTouches[0].pageY
+			distance = Math.sqrt(Math.pow(@startX - @endX, 2) + Math.pow(@startY - @endY, 2));
+			console.log "Distance: ", distance
+			swipeEvent = if distance &gt; @swipeThreshold then "Yes" else "No"
+			console.log "Swipe Event? ", swipeEvent
+	</pre>
+	<p>Here we have handlers that will take care of the touch event. If you fire up Google Chrome’s console with touch events <strong>enabled</strong>, you’ll find that as you click and drag with a mouse (or actually touch, if you test it out on an iPad or similar device) over this area, it’s calculating your overall linear distance between the <code>touchStart</code> and <code>touchEnd</code>. As you can see, it merely draws a straight line between your point A and point B drag. It’s very crude, and doesn’t track your <strong>overall distance</strong> for a drag; it merely calculates the distance, in pixels, of where your finger / mouse started a drag and where it ended it (Hey! Your math teacher was right—you DID use the Pythagoream theorem for something!). Neat, huh?</p>
+	<p><img src="/atsui/wp-content/uploads/2013/11/swipe-events.png" alt="CoffeeScript touch library events" class="alignnone size-full wp-image-773" width="794" height="330"></p>
+	<p>Because we have our <code>swipeThreshold</code> set to <code>300px</code>, it will only count a linear drag of 300px or more as an official “swipe.” The test is then saved to the <code>swipeEvent</code> variable. Here you can see my attempts at dragging.</p>
+	<h2>The Next Step</h2>
+	<p><em>So, wait—we’re just getting started. All I have here is a program that only tells me if my finger moved 300px.</em></p>
+	<p>Exactly! We didn’t get into the tap events, but you can imagine that this works the same way. You can even do <strong>hold</strong> and <strong>drag</strong> events if you figure out some math for that (hint: Google). While this was a very crude way of constructing a real touch library for your applications, the purpose of this was mainly to familiarize yourself with CoffeeScript and JavaScript touch events. You’ll no doubt want to re-structure much of this class to handle a variety of scenarios, but hopefully this got you somewhere.</p>
+	<p><em>What about all those unused variables, like <code>tapSlideOff</code>?</em></p>
+	<p>Those are for you to figure out! Just some ideas on things to consider when tracking touch events. If you have an Android phone, iPhone, or any tablet device, and if you have ever viewed some touch-based website that did something you didn’t like (a rarity, I know—there are so many “wonderful” mobile sites out there): this is your chance to turn from a complainer into an innovator. Every time you were upset, it was because, subconsciously, some primordial recess of your brain thought of a better way for touch events to behave. Now is your chance to shine! You’re welcome.</p>
+	<p><a href="http://codepen.io/dangodev/pen/kFpmh" target="_blank"><i class="icon-link"></i> You can view the completed demo on CodePen (touch only) →</a></p>
+	<h2>Philosophical Wrap-up</h2>
+	<p>The interesting thing about touch events is that, to a computer, it has no idea what a “tap” or “swipe” is. Sure, it knows you’re doing some sort of finger-fiddling, and JavaScript will give you a surprisingly verbose set of tools to handle that. <strong>We, as humans, define our own gestures.</strong> We can define a tap as a <em>quick touch</em>, and a swipe as a <em>linear dragging of a finger</em>, but really, there are potentially <strong>infinite gestures</strong> in between and around these states.</p>
+	<p><strong>Why stick to “tap” and “swipe”?</strong><br>
+	A couple gestures—mainly these—have proven themselves to be intuitive, and gestures we commonly used before touch devices. The goal is for machines to mimic human behavior, thus lowering the barrier to speedy, intuitive use. We <strong>tap</strong> on a keyboard to produce a key. We <strong>swipe</strong> a piece of paper to move it across a flat surface (maybe we could translate page turning into a touch gesture with the right hardware one day!). These gestures are more or less intuitive to how we interact with the world, and with new hardware advancements like <a href="http://www.theverge.com/2013/3/14/4105798/galaxy-s4-software-features-air-view-smart-stay-announced" target="_blank">eye tracking and hover gestures</a>, we’re slowly teaching our machines to think more like we do.</p>
+	<div id="about-author">Drew Powers is a frontend developer at <a href="//envylabs.com">Envy</a>.</div>
+</article>
+</div>
+<nav class="large-5 columns show-for-medium-and-up">	<div id="sidebar" role="complementary">
+		<ul>
+			<li id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" action="https://2013.pow.rs" ><div><input type="text" value="" placeholder="Search" name="s" id="s" /><input data-icon="&#xe605;" type="submit" id="searchsubmit" value="&#xe605;"></div></form></li>
+
+<!-- WordPress Popular Posts Plugin v3.2.3 [W] [all] [views] [regular] -->
+<li id="wpp-2" class="widget popular-posts">
+<h2 class="widgettitle">Popular Posts</h2>
+
+<ul class="wpp-list">
+<li><a href="/2013/01/getting-started-with-rets-for-php/" title="Getting Started with RETS for PHP" class="wpp-post-title" target="_self">Getting Started with RETS for PHP</a> </li>
+<li><a href="/2012/09/typekit-8-replacement-fonts/" title="TypeKit: 8 Replacement Fonts" class="wpp-post-title" target="_self">TypeKit: 8 Replacement Fonts</a> </li>
+<li><a href="/2013/02/choosing-a-font-program-comparison-of-tier-i-editors/" title="Choosing a Font Program: Comparison of Tier-I Editors" class="wpp-post-title" target="_self">Choosing a Font Program: Comparison of Tier-I Editors</a> </li>
+<li><a href="/2013/12/how-do-i-install-gems/" title="How Do I Install Gems to my Rails Project?" class="wpp-post-title" target="_self">How Do I Install Gems to my Rails Project?</a> </li>
+<li><a href="/2012/12/why-does-my-onload-function-return-undefined-in-javascript/" title="Why Does My onload Function Return ‘undefined’ in JavaScript?" class="wpp-post-title" target="_self">Why Does My onload Function Return ‘undefined’ in JavaScript?</a> </li>
+
+</ul>
+</li>
+
+<!-- End WordPress Popular Posts Plugin v3.2.3 -->
+<li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+	<li class="cat-item cat-item-11"><a href="/category/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="/category/development/" >Development</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="/category/html-a-day/" >HTML A Day</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="/category/tutorial/" >Tutorial</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="/category/design/typography/" >Typography</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</li>
+<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href='/tag/ajax/' class='tag-link-78' title='1 topic' style='font-size: 8pt;'>ajax</a>
+<a href='/tag/apple/' class='tag-link-36' title='3 topics' style='font-size: 18.5pt;'>apple</a>
+<a href='/tag/aptana/' class='tag-link-71' title='2 topics' style='font-size: 14.3pt;'>aptana</a>
+<a href='/tag/art/' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>art</a>
+<a href='/tag/brand/' class='tag-link-56' title='1 topic' style='font-size: 8pt;'>brand</a>
+<a href='/tag/coffeescript/' class='tag-link-88' title='1 topic' style='font-size: 8pt;'>coffeeScript</a>
+<a href='/tag/color-profiles/' class='tag-link-72' title='1 topic' style='font-size: 8pt;'>color profiles</a>
+<a href='/tag/copyright/' class='tag-link-63' title='1 topic' style='font-size: 8pt;'>copyright</a>
+<a href='/tag/css/' class='tag-link-85' title='2 topics' style='font-size: 14.3pt;'>css</a>
+<a href='/tag/freight-sans/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>freight sans</a>
+<a href='/tag/futura/' class='tag-link-10' title='1 topic' style='font-size: 8pt;'>futura</a>
+<a href='/tag/geometric/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>geometric</a>
+<a href='/tag/gill-sans/' class='tag-link-8' title='2 topics' style='font-size: 14.3pt;'>gill sans</a>
+<a href='/tag/gotham/' class='tag-link-9' title='2 topics' style='font-size: 14.3pt;'>gotham</a>
+<a href='/tag/helvetica/' class='tag-link-5' title='1 topic' style='font-size: 8pt;'>helvetica</a>
+<a href='/tag/heroku/' class='tag-link-86' title='1 topic' style='font-size: 8pt;'>heroku</a>
+<a href='/tag/hosting/' class='tag-link-80' title='2 topics' style='font-size: 14.3pt;'>hosting</a>
+<a href='/tag/html/' class='tag-link-84' title='2 topics' style='font-size: 14.3pt;'>html</a>
+<a href='/tag/humanist/' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>humanist</a>
+<a href='/tag/interface/' class='tag-link-60' title='2 topics' style='font-size: 14.3pt;'>interface</a>
+<a href='/tag/javascript/' class='tag-link-77' title='4 topics' style='font-size: 22pt;'>javaScript</a>
+<a href='/tag/league-gothic/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>league gothic</a>
+<a href='/tag/marketing/' class='tag-link-57' title='1 topic' style='font-size: 8pt;'>marketing</a>
+<a href='/tag/neo-grotesque/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>neo-grotesque</a>
+<a href='/tag/optimization/' class='tag-link-74' title='3 topics' style='font-size: 18.5pt;'>optimization</a>
+<a href='/tag/photoshop/' class='tag-link-73' title='3 topics' style='font-size: 18.5pt;'>photoshop</a>
+<a href='/tag/php/' class='tag-link-81' title='3 topics' style='font-size: 18.5pt;'>PHP</a>
+<a href='/tag/product-design/' class='tag-link-58' title='1 topic' style='font-size: 8pt;'>product design</a>
+<a href='/tag/proxima-nova/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>proxima nova</a>
+<a href='/tag/public-domain/' class='tag-link-62' title='1 topic' style='font-size: 8pt;'>public domain</a>
+<a href='/tag/rails/' class='tag-link-89' title='2 topics' style='font-size: 14.3pt;'>rails</a>
+<a href='/tag/rets/' class='tag-link-79' title='1 topic' style='font-size: 8pt;'>RETS</a>
+<a href='/tag/ruby/' class='tag-link-70' title='4 topics' style='font-size: 22pt;'>ruby</a>
+<a href='/tag/sans-serif/' class='tag-link-7' title='2 topics' style='font-size: 14.3pt;'>sans-serif</a>
+<a href='/tag/serif/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>serif</a>
+<a href='/tag/slab-serif/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>slab serif</a>
+<a href='/tag/srgb/' class='tag-link-75' title='1 topic' style='font-size: 8pt;'>sRGB</a>
+<a href='/tag/trade-gothic/' class='tag-link-48' title='1 topic' style='font-size: 8pt;'>trade gothic</a>
+<a href='/tag/typekit/' class='tag-link-45' title='2 topics' style='font-size: 14.3pt;'>typekit</a>
+<a href='/tag/ucf/' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>UCF</a>
+<a href='/tag/web/' class='tag-link-90' title='1 topic' style='font-size: 8pt;'>web</a>
+<a href='/tag/web-fonts/' class='tag-link-42' title='4 topics' style='font-size: 22pt;'>web fonts</a>
+<a href='/tag/windows/' class='tag-link-76' title='2 topics' style='font-size: 14.3pt;'>windows</a>
+<a href='/tag/wordpress/' class='tag-link-87' title='1 topic' style='font-size: 8pt;'>wordpress</a></div>
+</li>
+		</ul>
+	</div>
+</nav>
+</div></section></div>
+</div>
+<div id="lunchrush"></div>
+<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/dom-ready.js"></script>
+</body>
+</html>

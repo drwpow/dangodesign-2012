@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--
+      ...                         ..                    ..
+   xH88"`~ .x8X                 dF                     888B.
+ :8888   .f"8888Hf        u.   '88bu.                 48888E
+:8888>  X8L  ^""`   ...ue888b  '*88888bu        .u    '8888'
+X8888  X888h        888R Y888r   ^"*8888N    ud8888.   Y88F
+88888  !88888.      888R I888>  beWE "888L :888'8888.  '88
+88888   %88888      888R I888>  888E  888E d888 '88%"   8F
+88888 '> `8888>     888R I888>  888E  888E 8888.+"      4
+`8888L %  ?888   ! u8888cJ888   888E  888F 8888L        .
+ `8888  `-*""   /   "*888*P"   .888N..888  '8888c. .+  u8N.
+   "888.      :"      'Y"       `"888*""    "88888%   "*88%
+     `""***~"`                     ""         "YP'      ""
+                                                                                      ..
+         .xHL                                                            .uef^"     888B.
+      .-`8888hxxx~       x.    .          ..         ..                :d88E       48888E
+   .H8X  `%888*"       .@88k  z88u      .@88i      .@88i         u     `888E       '8888'
+   888X     ..x..     ~"8888 ^8888     ""%888>    ""%888>     us888u.   888E .z8k   Y88F
+  '8888k .x8888888x     8888  888R       '88%       '88%   .@88 "8888"  888E~?888L  '88
+   ?8888X    "88888X    8888  888R     ..dILr~`   ..dILr~` 9888  9888   888E  888E   8F
+    ?8888X    '88888>   8888  888R    '".-%88b   '".-%88b  9888  9888   888E  888E   4
+ H8H %8888     `8888>   8888 ,888B .   @  '888k   @  '888k 9888  9888   888E  888E   .
+'888> 888"      8888   "8888Y 8888"   8F   8888  8F   8888 9888  9888   888E  888E  u8N.
+ "8` .8" ..     88*     `Y"   'YP    '8    8888 '8    8888 "888*""888" m888N= 888> "*88%
+    `  x8888h. d*"                   '8    888F '8    888F  ^Y"   ^Y'   `Y"   888    ""
+      !""*888%~                       %k  <88F   %k  <88F                    J88"
+      !   `"  .                        "+:*%`     "+:*%`                     @%
+      '-....:~                                                             :"
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://2013.pow.rs/atsui/wp-content/themes/dango/img/logo.fb.png">
+<meta property="og:url" content="https://2013.pow.rs/2013/06/how-to-set-up-wordpress-no-really/">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/css/foundation.min.css">
+<link rel="stylesheet" type="text/css" href="/atsui/wp-content/themes/dango/tobanjan.css">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" type="image/ico" href="/76x76.png">
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>How to Set Up WordPress (No, Really!) / Drew Powers</title>
+<link rel="canonical" href="https://2013.pow.rs/2013/06/how-to-set-up-wordpress-no-really/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to Set Up WordPress (No, Really!) / Drew Powers" />
+<meta property="og:description" content="It’s no secret that there are good and bad ways of animating. You can either imbue meaning into a transition, or completely, utterly disorient someone. Google’s page on meaningful transitions is perhaps one of the clearest explanations of this principle as it relates to interfaces. © 2014 Google Animation’s role in web and UI has &hellip;" />
+<meta property="og:url" content="https://2013.pow.rs/2013/06/how-to-set-up-wordpress-no-really/" />
+<meta property="og:site_name" content="Drew Powers" />
+<meta property="article:section" content="Design" />
+<meta property="article:published_time" content="2013-06-05T21:04:56+00:00" />
+<meta property="article:modified_time" content="2013-12-24T11:49:18+00:00" />
+<meta property="og:updated_time" content="2013-12-24T11:49:18+00:00" />
+<!-- / Yoast SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/atsui\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='/atsui/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.2.3' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+				<!-- WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript">//<![CDATA[
+
+					var sampling_active = 0;
+					var sampling_rate   = 100;
+					var do_request = false;
+
+					if ( !sampling_active ) {
+						do_request = true;
+					} else {
+						var num = Math.floor(Math.random() * sampling_rate) + 1;
+						do_request = ( 1 === num );
+					}
+
+					if ( do_request ) {
+
+						// Create XMLHttpRequest object and set variables
+						var xhr = ( window.XMLHttpRequest )
+						  ? new XMLHttpRequest()
+						  : new ActiveXObject( "Microsoft.XMLHTTP" ),
+						url = '/atsui/wp-admin/admin-ajax.php',
+						params = 'action=update_views_ajax&token=52cee32aea&wpp_id=919';
+						// Set request method and target URL
+						xhr.open( "POST", url, true );
+						// Set request header
+						xhr.setRequestHeader( "Content-type", "application/x-www-form-urlencoded" );
+						// Hook into onreadystatechange
+						xhr.onreadystatechange = function() {
+							if ( 4 === xhr.readyState && 200 === xhr.status ) {
+								if ( window.console && window.console.log ) {
+									window.console.log( xhr.responseText );
+								}
+							}
+						};
+						// Send request
+						xhr.send( params );
+
+					}
+
+				//]]></script>
+				<!-- End WordPress Popular Posts v3.2.3 -->
+				<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/kc.min.js"></script>
+</head>
+
+<body>
+<div id="site">
+<header id="head" class="row">
+  <h1 id="logo" class="large-2 columns"><a class="icon-drew" href="/atsui" title="Drew Powers / Home"><img src="/atsui/wp-content/themes/dango/img/wordmark.svg" width="64" height="64" alt="Drew Powers"></a></h1>
+  <nav id="top-navigation" class="large-10 columns"><ul class="row"><li id="nav-p" class="small-4 large-4 columns"><a class="icon-box" href="/">Portfolio</a></li><li id="nav-b" class="small-4 large-4 columns selected"><a class="icon-pentip" href="/blog/">Blog</a></li><li id="nav-c" class="small-4 large-4 columns"><a class="icon-dango" href="/contact/">Contact</a></li></ul></nav>
+</header>
+<div class="row">
+<aside id="site-info" class="large-2 columns show-for-medium-up">
+  <h2>the<br>personal<br>portfolio of<br><span class="author">Drew<br>Powers</span></h2>
+<div id="social"><a class="icon-twitter" href="https://twitter.com/drwpow" target="_blank" title="Twitter">Twitter</a> <a class="icon-dribbble" href="https://dribbble.com/drewpowers" target="_blank" title="Dribbble">Dribbble</a> <a class="icon-github" href="https://github.com/drwpow" target="_blank" title="GitHub">GitHub</a></div>
+</aside>
+<section id="main" class="large-10 columns"><div class="row">
+<div id="posts-left" class="single large-7 columns">
+<article><h1>How to Set Up WordPress (No, Really!)</h1>
+	<time datetime="2013-Jun-05">June 5, 2013</time>
+	<p>WordPress is famous for its “5-minute installation.” Some even argue that this ease of installation is what made it so popular. Though its numbers are still in the dark, some claim it as the most widely-used CMS, and some say it powers <a href="http://w3techs.com/technologies/details/cm-wordpress/all/all" target="_blank">18% of all websites</a>. But despite its overwhelming simplicity and popularity, many users don’t know how to squeeze some of the most important things out of their WordPress sites. What do I mean by that?</p>
+	<ul>
+	<li><strong>Setting up Custom Post Types</strong>: make more than just blog posts and pages.</li>
+	<li><strong>Cleaning up headers</strong>: taking the junk out of the WP header (can you believe some sites accidentally load jQuery TWO or THREE TIMES?)</li>
+	<li><strong>Setting up Custom Fields</strong>: need more than just one content box to edit? Why not <a href="http://www.advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a>?</li>
+	<li><strong>Moving the WordPress Installation into a sub-folder</strong>: Because maybe you&nbsp;<em>don’t</em> want bots brute-forcing your <code>/wp-login.php</code> script</li>
+	<li><strong>Other Improvements</strong>: optimize your SEO with <a href="http://wordpress.org/plugins/google-sitemap-generator/" target="_blank">Google Sitemaps XML</a> and <a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO</a> plugins.</li>
+	</ul>
+	<h2>Blank Theme</h2>
+	<p>If you need a blank theme that takes care of <strong>cleaned headers</strong> and has some starter <strong>custom post type</strong> code, download my <a href="https://github.com/drwpow/kara" target="_blank">blank theme for WordPress</a>. Super minimal, and geared toward people who get annoyed at every one else’s CSS but their own (did I mention how <em>minimal</em> it is?).</p>
+	<h2>Setting Up Custom Post Types</h2>
+	<p><a href="http://codex.wordpress.org/Post_Types" target="_blank">Custom Post Types</a> are great. Let’s say you have a photography blog. Sure, you figured out how to set up the blog posts and the about pages, but what if you want a photo gallery? You just want something simple, and you want to upload new photos that all go to one place.</p>
+	<p>In the past, you would have to code your own WordPress theme and fiddle with post categories to make your gallery. You’d have to wriggle together some PHP wizardry to style the “gallery” category into something entirely different, or just deal with the fact that it won’t turn out how you want it. But this is perfect for custom post types.</p>
+	<p>Not only can you add a “gallery” custom post type, you can also use WordPress’ theme hierarchy to make your own gallery template pages, and keep them completely separate from the blog section. Let’s say you add a section called <code>portfolio</code>. This is how you’d go about adding it:</p>
+	<p><strong>Step 1: Add to <code>functions.php</code></strong></p>
+	<pre>function custom_post_types() {
+		register_post_type('portfolio', array(
+			'labels' =&gt; array(
+				'name' =&gt; _x('Portfolio', 'post type general name'),
+				'singular_name' =&gt; _x('Portfolio', 'post type singular name'),
+				'add_new' =&gt; _x('Add New', 'portfolio'),
+				'add_new_item' =&gt; __('Add New Portfolio Piece'),
+				'edit_item' =&gt; __('Edit Portfolio Piece'),
+				'new_item' =&gt; __('New Portfolio Piece'),
+				'all_items' =&gt; __('All Portfolio Pieces'),
+				'view_item' =&gt; __('View Portfolio Piece'),
+				'search_items' =&gt; __('Search Portfolio'),
+				'not_found' =&gt;  __('No pieces found'),
+				'not_found_in_trash' =&gt; __('No pieces found in Trash')
+			),
+			'public' =&gt; true,
+			'publicly_queryable' =&gt; true,
+			'show_ui' =&gt; true,
+			'show_in_menu' =&gt; true,
+			'query_var' =&gt; true,
+			'rewrite' =&gt; true,
+			'capability_type' =&gt; 'post',
+			'has_archive' =&gt; true,
+			'hierarchical' =&gt; false,
+			'menu_position' =&gt; 5,
+			'supports' =&gt; array('title', 'editor', 'thumbnail')
+		));
+	}
+	add_action( 'init', 'custom_post_types' );</pre>
+	<p><strong>Step 2: Create template files</strong></p>
+	<p>Create the following files in your theme:</p>
+	<ol>
+	<li><code>archive-portfolio.php</code> — the collection of gallery images</li>
+	<li><code>portfolio-single.php</code> — the template for a single gallery image</li>
+	</ol>
+	<p>to add a page with all your gallery images on them, and for the single gallery template. Note that the word <code>portfolio</code> is the same as the first paramater for the <code>register_post_type</code> function. If you changed this, then you would also change the file names of these 2 template files.</p>
+	<p>And that’s it! Play around with Custom Post Types and you’ll see in no time where they become handy. You can also read the <a href="http://codex.wordpress.org/Function_Reference/register_post_type" target="_blank">documentation here</a> for what all the custom post type settings are.</p>
+	<h2>Cleaning Up the Header</h2>
+	<p>WordPress has a lot of clutter in its header by default —&nbsp;including broadcasting to the world that you’re using WordPress. Insert the following code anywhere into <code>functions.php</code> to clean up some of the WordPress headers, without taking away anything you need:</p>
+	<pre>remove_action('wp_head', 'feed_links_extra', 3);
+	remove_action('wp_head', 'feed_links', 2);
+	remove_action('wp_head', 'rsd_link' );
+	remove_action('wp_head', 'wlwmanifest_link');
+	remove_action('wp_head', 'parent_post_rel_link', 10, 0);
+	remove_action('wp_head', 'start_post_rel_link', 10, 0);
+	remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
+	remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+	remove_action('wp_head', 'wp_generator' );</pre>
+	<p><strong>jQuery</strong></p>
+	<p>As an additional step, you can also register jQuery to load automatically with WordPress, without colliding with another plugin’s jQuery. Insert the following anywhere into <code>functions.php</code>:</p>
+	<pre>function script_check() {
+		wp_dequeue_script('jquery');
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js', false, null);
+		wp_enqueue_script('jquery');
+	}
+
+	add_action('wp_enqueue_scripts', 'script_check');</pre>
+	<p><em>Aw, forget that. I like to just hand-code a good ol’-fashioned jQuery <code>&lt;script&gt;</code> tag into my <code>&lt;head&gt;</code> section; none of that WordPress mumbo-jumbo.</em></p>
+	<p>That will technically work, but if you know anything about WordPress plugin authors (ie, the entire world—educated and un-), you’d know that, without fail, not letting WordPress know you’re using jQuery will probably mean it will try to add it again for you. This will result in users having to download scripts at least twice when they don’t need to, not to mention the additional nightmares of having version conflicts.</p>
+	<p>This script will not only resolve most conflicts (other than a plugin hard-writing its own jQuery <code>&lt;script&gt;</code> into the HTML—in which case you should probably not use anything that terrible), but it has the added benefit of <a href="http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/" target="_blank">using the Google CDN</a>: mo caching, less problems.</p>
+	<h2>Setting Up Custom Fields</h2>
+	<p>So you’ve got that nice, neat content box for every post, page, and CPT (custom post type), but what if, say, I don’t know, it’s not enough? What if you want to give users the option to swap out a photo? Or edit a really-complicated table?</p>
+	<p>To solve this problem, you’ve probably tinkered with WordPress’ <a href="http://codex.wordpress.org/Post_Meta_Data_Section" target="_blank">Post Meta</a> as a way to add additional fields to the post. The problem with this is that it’s terrible. It’s just terrible. I won’t go into it. You know it’s terrible, and if you’ve ever let a client use this, then <strong>shame on you</strong>.</p>
+	<p>Along comes <a href="http://www.advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a> to add image boxes, true/false checkboxes, additional content / text boxes, and even <a href="http://www.advancedcustomfields.com/add-ons/repeater-field/" target="_blank">editable arrays</a>.</p>
+	<p>This man is a genius, I tell you. To be frank, this is such a well-designed, completely stable plugin it baffles me that this isn’t a standard part of WordPress.</p>
+	<p>I won’t go into a full-fledged tutorial of how to use this here when <a href="http://www.elliotcondon.com/using-the-advanced-custom-fields-plugin-to-create-a-custom-home-page-in-wordpress/" target="_blank">such a great guide already exists</a>, but the takeaway from this is that <strong>you need to install this. Now.<strong></strong></strong></p>
+	<h2>Moving the WordPress Installation into a sub-folder</h2>
+	<p><em>Why?</em> The main advantage of this is to not let a bot ping your <code>/wp-login.php</code> script without breaking a sweat. By taking this into a sub-folder, no, it doesn’t make your site invincible to bot attacks. But it does make bots work harder to find it, along with a few other hot targets (at least, for now).</p>
+	<p>Moving WordPress into a sub-folder requires 4 steps:</p>
+	<p><strong>Step 1: Move everything EXCEPT <code>/index.php</code>.</strong></p>
+	<p>Make a new folder inside your root directory and <strong>name it whatever.</strong> This is your choice, and should be unique for each site. Don’t cop out and name it “WordPress” or “wp” or something lame like that. Name it <code>brunhilda</code> or <code>tardis</code> or <code>omg-dont-look-in-here</code>. Your choice. Anyway, move everything <strong>except</strong> <code>/index.php</code>.</p>
+	<p><strong>Step 2: Edit <code>/index.php</code></strong></p>
+	<p>Inside <code>index.php</code> you should see the following code:</p>
+	<pre>/** Loads the WordPress Environment and Template */
+	require('./wp-blog-header.php');</pre>
+	<p>Change it to:</p>
+	<pre>require('YOURFOLDERNAME/wp-blog-header.php');</pre>
+	<p><strong>Step 3: Make a blank <code>index.php</code> file inside your new folder</strong><br>
+	Open up a text editor, and save a blank file as <code>index.php</code> inside the folder you just made that has everything in it. This will prevent someone seeing a directory listing of this folder if they typed in the URL from a browser (assuming you didn’t mess with your APACHE config to disable directory listing).</p>
+	<p><strong>Step 4: Edit the WP database</strong><br>
+	In case you made this switch to an existing WP installation, you may find that by moving the WordPress installation, you can no longer log in. Or, at least, when you log in, it spits you back out to a 404 page. If you can still log in perfectly after all this: <strong>skip this step.</strong> If not, no worries! Read on.</p>
+	<p>If you’re still getting the 404 error when you log in, have a look at your WordPress database (look at <code>wp-config.php</code> for your DB login info; if this is on your computer, you can access your database with <a href="http://www.sequelpro.com/" target="_blank">Sequel Pro</a> or <a href="http://www.heidisql.com/" target="_blank">Heidi SQL</a>; if this is on a host, try logging into your dashboard and looking for “phpMyAdmin,” or some other database access tool).</p>
+	<p>Look at the <code>wp_options</code> table (or whatever your WP prefix is). The first entry should have the <strong>option_name</strong> <code>siteurl</code>. For the <strong>option_value</strong>, you’ll see your WordPress home URL. You need to change this to the URL of your WordPress install: <code>http://yourblogsite.com/yourwordpressfolder</code>. Try logging in again.</p>
+	<h2>Other Improvements</h2>
+	<p><strong>Sitemaps</strong></p>
+	<p><a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=156184" target="_blank">Having sitemaps</a> is a vital part of maintaining a website—it notifies Google of every page on your website, even pages it missed during its automatic crawl. While these are clunky to maintain for hand-coded sites, WordPress sites are built to easily take care of generating this themselves. The <a href="http://wordpress.org/plugins/google-sitemap-generator/" target="_blank">Google XML Sitemaps</a> plugin does that wonderfully, and even automatically notifies Google of your sitemap when you generate it. <strong>Be sure to add your custom post types</strong> to the sitemap, as they aren’t added by default.</p>
+	<p><strong>SEO</strong></p>
+	<p>The last piece of the puzzle is SEO. Often times, clients want the ability to edit their titles and meta tags, which WordPress doesn’t easily offer for some reason. <a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast</a> offers clients full control over titles and meta descriptions, as well as <a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=139394" target="_blank">canonical URLs</a>.</p>
+	<h2>Quick Links</h2>
+	<ul>
+	<li><a href="https://github.com/dangodev/kara" target="_blank">Blank Theme for WordPress</a></li>
+	<li><a href="http://wordpress.org/plugins/advanced-custom-fields/" target="_blank"><span style="line-height: 13px;">Advanced Custom Fields</span></a></li>
+	<li><a href="http://wordpress.org/plugins/google-sitemap-generator/" target="_blank">Google XML Sitemaps</a></li>
+	<li><a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast</a></li>
+	<li><a href="http://codex.wordpress.org/Post_Types" target="_blank">Adding Custom Post Types</a></li>
+	<li><a href="http://codex.wordpress.org/Hardening_WordPress" target="_blank">Hardening (Securing) WordPress</a></li>
+	</ul>
+	<div id="about-author">Drew Powers is a frontend developer at <a href="//envylabs.com">Envy</a>.</div>
+</article>
+</div>
+<nav class="large-5 columns show-for-medium-and-up">	<div id="sidebar" role="complementary">
+		<ul>
+			<li id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" action="https://2013.pow.rs" ><div><input type="text" value="" placeholder="Search" name="s" id="s" /><input data-icon="&#xe605;" type="submit" id="searchsubmit" value="&#xe605;"></div></form></li>
+
+<!-- WordPress Popular Posts Plugin v3.2.3 [W] [all] [views] [regular] -->
+<li id="wpp-2" class="widget popular-posts">
+<h2 class="widgettitle">Popular Posts</h2>
+
+<ul class="wpp-list">
+<li><a href="/2013/01/getting-started-with-rets-for-php/" title="Getting Started with RETS for PHP" class="wpp-post-title" target="_self">Getting Started with RETS for PHP</a> </li>
+<li><a href="/2012/09/typekit-8-replacement-fonts/" title="TypeKit: 8 Replacement Fonts" class="wpp-post-title" target="_self">TypeKit: 8 Replacement Fonts</a> </li>
+<li><a href="/2013/02/choosing-a-font-program-comparison-of-tier-i-editors/" title="Choosing a Font Program: Comparison of Tier-I Editors" class="wpp-post-title" target="_self">Choosing a Font Program: Comparison of Tier-I Editors</a> </li>
+<li><a href="/2013/12/how-do-i-install-gems/" title="How Do I Install Gems to my Rails Project?" class="wpp-post-title" target="_self">How Do I Install Gems to my Rails Project?</a> </li>
+<li><a href="/2012/12/why-does-my-onload-function-return-undefined-in-javascript/" title="Why Does My onload Function Return ‘undefined’ in JavaScript?" class="wpp-post-title" target="_self">Why Does My onload Function Return ‘undefined’ in JavaScript?</a> </li>
+
+</ul>
+</li>
+
+<!-- End WordPress Popular Posts Plugin v3.2.3 -->
+<li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+	<li class="cat-item cat-item-11"><a href="/category/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="/category/development/" >Development</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="/category/html-a-day/" >HTML A Day</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="/category/tutorial/" >Tutorial</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="/category/design/typography/" >Typography</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</li>
+<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href='/tag/ajax/' class='tag-link-78' title='1 topic' style='font-size: 8pt;'>ajax</a>
+<a href='/tag/apple/' class='tag-link-36' title='3 topics' style='font-size: 18.5pt;'>apple</a>
+<a href='/tag/aptana/' class='tag-link-71' title='2 topics' style='font-size: 14.3pt;'>aptana</a>
+<a href='/tag/art/' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>art</a>
+<a href='/tag/brand/' class='tag-link-56' title='1 topic' style='font-size: 8pt;'>brand</a>
+<a href='/tag/coffeescript/' class='tag-link-88' title='1 topic' style='font-size: 8pt;'>coffeeScript</a>
+<a href='/tag/color-profiles/' class='tag-link-72' title='1 topic' style='font-size: 8pt;'>color profiles</a>
+<a href='/tag/copyright/' class='tag-link-63' title='1 topic' style='font-size: 8pt;'>copyright</a>
+<a href='/tag/css/' class='tag-link-85' title='2 topics' style='font-size: 14.3pt;'>css</a>
+<a href='/tag/freight-sans/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>freight sans</a>
+<a href='/tag/futura/' class='tag-link-10' title='1 topic' style='font-size: 8pt;'>futura</a>
+<a href='/tag/geometric/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>geometric</a>
+<a href='/tag/gill-sans/' class='tag-link-8' title='2 topics' style='font-size: 14.3pt;'>gill sans</a>
+<a href='/tag/gotham/' class='tag-link-9' title='2 topics' style='font-size: 14.3pt;'>gotham</a>
+<a href='/tag/helvetica/' class='tag-link-5' title='1 topic' style='font-size: 8pt;'>helvetica</a>
+<a href='/tag/heroku/' class='tag-link-86' title='1 topic' style='font-size: 8pt;'>heroku</a>
+<a href='/tag/hosting/' class='tag-link-80' title='2 topics' style='font-size: 14.3pt;'>hosting</a>
+<a href='/tag/html/' class='tag-link-84' title='2 topics' style='font-size: 14.3pt;'>html</a>
+<a href='/tag/humanist/' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>humanist</a>
+<a href='/tag/interface/' class='tag-link-60' title='2 topics' style='font-size: 14.3pt;'>interface</a>
+<a href='/tag/javascript/' class='tag-link-77' title='4 topics' style='font-size: 22pt;'>javaScript</a>
+<a href='/tag/league-gothic/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>league gothic</a>
+<a href='/tag/marketing/' class='tag-link-57' title='1 topic' style='font-size: 8pt;'>marketing</a>
+<a href='/tag/neo-grotesque/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>neo-grotesque</a>
+<a href='/tag/optimization/' class='tag-link-74' title='3 topics' style='font-size: 18.5pt;'>optimization</a>
+<a href='/tag/photoshop/' class='tag-link-73' title='3 topics' style='font-size: 18.5pt;'>photoshop</a>
+<a href='/tag/php/' class='tag-link-81' title='3 topics' style='font-size: 18.5pt;'>PHP</a>
+<a href='/tag/product-design/' class='tag-link-58' title='1 topic' style='font-size: 8pt;'>product design</a>
+<a href='/tag/proxima-nova/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>proxima nova</a>
+<a href='/tag/public-domain/' class='tag-link-62' title='1 topic' style='font-size: 8pt;'>public domain</a>
+<a href='/tag/rails/' class='tag-link-89' title='2 topics' style='font-size: 14.3pt;'>rails</a>
+<a href='/tag/rets/' class='tag-link-79' title='1 topic' style='font-size: 8pt;'>RETS</a>
+<a href='/tag/ruby/' class='tag-link-70' title='4 topics' style='font-size: 22pt;'>ruby</a>
+<a href='/tag/sans-serif/' class='tag-link-7' title='2 topics' style='font-size: 14.3pt;'>sans-serif</a>
+<a href='/tag/serif/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>serif</a>
+<a href='/tag/slab-serif/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>slab serif</a>
+<a href='/tag/srgb/' class='tag-link-75' title='1 topic' style='font-size: 8pt;'>sRGB</a>
+<a href='/tag/trade-gothic/' class='tag-link-48' title='1 topic' style='font-size: 8pt;'>trade gothic</a>
+<a href='/tag/typekit/' class='tag-link-45' title='2 topics' style='font-size: 14.3pt;'>typekit</a>
+<a href='/tag/ucf/' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>UCF</a>
+<a href='/tag/web/' class='tag-link-90' title='1 topic' style='font-size: 8pt;'>web</a>
+<a href='/tag/web-fonts/' class='tag-link-42' title='4 topics' style='font-size: 22pt;'>web fonts</a>
+<a href='/tag/windows/' class='tag-link-76' title='2 topics' style='font-size: 14.3pt;'>windows</a>
+<a href='/tag/wordpress/' class='tag-link-87' title='1 topic' style='font-size: 8pt;'>wordpress</a></div>
+</li>
+		</ul>
+	</div>
+</nav>
+</div></section></div>
+</div>
+<div id="lunchrush"></div>
+<script type="text/javascript" src="/atsui/wp-content/themes/dango/js/dom-ready.js"></script>
+
+</body>
+</html>
